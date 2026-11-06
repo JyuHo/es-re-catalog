@@ -120,9 +120,9 @@ class Resolver:
         key = f"latest:{repo}"
         if key not in self._releases:
             try:
-                data = self.get(f"https://api.github.com/repos/{repo}/releases/latest", "application/json")
-                self._releases[key] = [json.loads(data)]
-            except SourceError:
+                data = json.loads(self.get(f"https://api.github.com/repos/{repo}/releases/latest", "application/json"))
+                self._releases[key] = [data] if isinstance(data, dict) and "tag_name" in data else []
+            except (SourceError, ValueError):
                 self._releases[key] = []
         return self._releases[key][0] if self._releases[key] else None
 

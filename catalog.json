@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-11-06T23:52:21Z",
+  "generated": "2026-11-06T23:57:43Z",
   "standalone": [
     {
       "id": "retroarch",
@@ -78,6 +78,13 @@
       "builds": {
         "x86_64": [
           {
+            "type": "appimage",
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-linux-appimage-x64-Qt.AppImage",
+            "version": "v2.8.2",
+            "sha256": "0c46bb6a88aa2782b10853a7b07cf3387ba99cbef2b966372cd2315b8571abea",
+            "size": 60119544
+          },
+          {
             "type": "flatpak",
             "ref": "net.pcsx2.PCSX2",
             "remote": "flathub"
@@ -101,10 +108,10 @@
         "x86_64": [
           {
             "type": "appimage",
-            "url": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-fff0c96bf38d1ada075e524c4753a7f263c06449/rpcs3-v0.0.18-12817-fff0c96b_linux64.AppImage",
-            "version": "build-fff0c96bf38d1ada075e524c4753a7f263c06449",
-            "sha256": "75c96819e35b20355fdfa1a43fa4dde1837f61dc08a70dbb3a82d96fcad86c69",
-            "size": 61236416
+            "url": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-b94078bed10ccdb86c5e4b9f73bff8f479089fa4/rpcs3-v0.0.43-20568-b94078be_linux64.AppImage",
+            "version": "build-b94078bed10ccdb86c5e4b9f73bff8f479089fa4",
+            "sha256": "c3cf03d0436b03e2d2f1d466d64224d5e550ab26373f3faac236f1627de8fdc5",
+            "size": 83057792
           },
           {
             "type": "flatpak",
@@ -115,10 +122,10 @@
         "aarch64": [
           {
             "type": "appimage",
-            "url": "https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-ffeb16fe1ec7a6a62ac317270dab20197b060ef9/rpcs3-v0.0.37-18146-ffeb16fe_linux_aarch64.AppImage",
-            "version": "build-ffeb16fe1ec7a6a62ac317270dab20197b060ef9",
-            "sha256": "0d429ea8ba1f34198ae31293a78bb0c1d2e69b85b7a800bc0b7ccd0fc6368c3f",
-            "size": 79382634
+            "url": "https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-b94078bed10ccdb86c5e4b9f73bff8f479089fa4/rpcs3-v0.0.43-20568-b94078be_linux_aarch64.AppImage",
+            "version": "build-b94078bed10ccdb86c5e4b9f73bff8f479089fa4",
+            "sha256": "d96554faa4fd39cb91c527ba5bfe821641776d5590d5a1f943efb4178a7b23f0",
+            "size": 79056377
           }
         ]
       },

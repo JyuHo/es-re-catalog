@@ -1,0 +1,1162 @@
+{
+  "format": 1,
+  "generated": "2026-11-06T23:52:21Z",
+  "standalone": [
+    {
+      "id": "retroarch",
+      "name": "RetroArch",
+      "systems": [],
+      "description": "Frontend for the libretro cores of the second tab.",
+      "homepage": "https://www.retroarch.com",
+      "binaries": [
+        "retroarch"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "flatpak",
+            "ref": "org.libretro.RetroArch",
+            "remote": "flathub"
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "flatpak",
+            "ref": "org.libretro.RetroArch",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.libretro.RetroArch.png"
+    },
+    {
+      "id": "duckstation",
+      "name": "DuckStation",
+      "systems": [
+        "psx"
+      ],
+      "description": "PlayStation emulator. Free for non-commercial use only.",
+      "homepage": "https://www.duckstation.org",
+      "binaries": [
+        "duckstation-qt",
+        "duckstation"
+      ],
+      "license": "CC-BY-NC-ND-4.0",
+      "builds": {
+        "x86_64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/stenzek/duckstation/releases/download/latest/DuckStation-x64.AppImage",
+            "version": "latest-2026-10-25",
+            "sha256": "4d5c3dcfd9937dc9e77b8fcd5f879b8ec0c69551d5ed13462592073608542fca",
+            "size": 94519584
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/stenzek/duckstation/releases/download/latest/DuckStation-arm64.AppImage",
+            "version": "latest-2026-10-25",
+            "sha256": "dce6ca77055ace60491781b6b57f3e55e9b54678777ac575ac2471c22ad1128e",
+            "size": 87900416
+          }
+        ]
+      }
+    },
+    {
+      "id": "pcsx2",
+      "name": "PCSX2",
+      "systems": [
+        "ps2"
+      ],
+      "description": "PlayStation 2 emulator.",
+      "homepage": "https://pcsx2.net",
+      "binaries": [
+        "pcsx2-qt",
+        "pcsx2"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "flatpak",
+            "ref": "net.pcsx2.PCSX2",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.pcsx2.PCSX2.png"
+    },
+    {
+      "id": "rpcs3",
+      "name": "RPCS3",
+      "systems": [
+        "ps3"
+      ],
+      "description": "PlayStation 3 emulator.",
+      "homepage": "https://rpcs3.net",
+      "binaries": [
+        "rpcs3"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-fff0c96bf38d1ada075e524c4753a7f263c06449/rpcs3-v0.0.18-12817-fff0c96b_linux64.AppImage",
+            "version": "build-fff0c96bf38d1ada075e524c4753a7f263c06449",
+            "sha256": "75c96819e35b20355fdfa1a43fa4dde1837f61dc08a70dbb3a82d96fcad86c69",
+            "size": 61236416
+          },
+          {
+            "type": "flatpak",
+            "ref": "net.rpcs3.RPCS3",
+            "remote": "flathub"
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-ffeb16fe1ec7a6a62ac317270dab20197b060ef9/rpcs3-v0.0.37-18146-ffeb16fe_linux_aarch64.AppImage",
+            "version": "build-ffeb16fe1ec7a6a62ac317270dab20197b060ef9",
+            "sha256": "0d429ea8ba1f34198ae31293a78bb0c1d2e69b85b7a800bc0b7ccd0fc6368c3f",
+            "size": 79382634
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.rpcs3.RPCS3.png"
+    },
+    {
+      "id": "ppsspp",
+      "name": "PPSSPP",
+      "systems": [
+        "psp"
+      ],
+      "description": "PSP emulator.",
+      "homepage": "https://www.ppsspp.org",
+      "binaries": [
+        "PPSSPPSDL",
+        "ppsspp-sdl",
+        "ppsspp-qt",
+        "ppsspp"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-anylinux-x86_64.AppImage",
+            "version": "v1.20.4",
+            "sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+            "size": 50689748
+          },
+          {
+            "type": "flatpak",
+            "ref": "org.ppsspp.PPSSPP",
+            "remote": "flathub"
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-anylinux-aarch64.AppImage",
+            "version": "v1.20.4",
+            "sha256": "18c1d515fd99b0b10ca5fa8cbab192f6d4c9d8a10381e16f5de8fb8f9d39bbe1",
+            "size": 48581283
+          },
+          {
+            "type": "flatpak",
+            "ref": "org.ppsspp.PPSSPP",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.ppsspp.PPSSPP.png"
+    },
+    {
+      "id": "melonds",
+      "name": "melonDS",
+      "systems": [
+        "nds"
+      ],
+      "description": "Nintendo DS emulator.",
+      "homepage": "https://melonds.kuribo64.net",
+      "binaries": [
+        "melonDS"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "archive",
+            "url": "https://github.com/melonDS-emu/melonDS/releases/download/1.1/melonDS-1.1-appimage-x86_64.zip",
+            "version": "1.1",
+            "exec": "\\.AppImage$",
+            "sha256": "bf377420a2e95f2cd2cdda17d5372b51c2534f858b038db9ec6d129554875124",
+            "size": 34289284
+          },
+          {
+            "type": "flatpak",
+            "ref": "net.kuribo64.melonDS",
+            "remote": "flathub"
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "archive",
+            "url": "https://github.com/melonDS-emu/melonDS/releases/download/1.1/melonDS-1.1-appimage-aarch64.zip",
+            "version": "1.1",
+            "exec": "\\.AppImage$",
+            "sha256": "c537ae018d6dcedfe9da0317a1d5c0163e69201e23abfa163fa2a63e437ace09",
+            "size": 33391635
+          },
+          {
+            "type": "flatpak",
+            "ref": "net.kuribo64.melonDS",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.kuribo64.melonDS.png"
+    },
+    {
+      "id": "azahar",
+      "name": "Azahar",
+      "systems": [
+        "3ds"
+      ],
+      "description": "Nintendo 3DS emulator, successor of Citra and Lime3DS.",
+      "homepage": "https://azahar-emu.org",
+      "binaries": [
+        "azahar",
+        "azahar-qt"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar.AppImage",
+            "version": "2126.2",
+            "sha256": "af037f8b775198f636b14bcfe63fb401b02246ebfefe1025bb905ce042556960",
+            "size": 103684600
+          },
+          {
+            "type": "flatpak",
+            "ref": "org.azahar_emu.Azahar",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.azahar_emu.Azahar.png"
+    },
+    {
+      "id": "dolphin",
+      "name": "Dolphin",
+      "systems": [
+        "gamecube",
+        "wii"
+      ],
+      "description": "GameCube and Wii emulator.",
+      "homepage": "https://dolphin-emu.org",
+      "binaries": [
+        "dolphin-emu"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "flatpak",
+            "ref": "org.DolphinEmu.dolphin-emu",
+            "remote": "flathub"
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "flatpak",
+            "ref": "org.DolphinEmu.dolphin-emu",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.DolphinEmu.dolphin-emu.png"
+    },
+    {
+      "id": "cemu",
+      "name": "Cemu",
+      "systems": [
+        "wiiu"
+      ],
+      "description": "Wii U emulator.",
+      "homepage": "https://cemu.info",
+      "binaries": [
+        "cemu",
+        "Cemu"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/cemu-project/Cemu/releases/download/v2.6/Cemu-2.6-x86_64.AppImage",
+            "version": "v2.6",
+            "sha256": "0c20c4aeb800bb13d9bab9474ef45a6f8fcde6402cad9b32ac2a1bbd03186313",
+            "size": 61423960
+          },
+          {
+            "type": "flatpak",
+            "ref": "info.cemu.Cemu",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/info.cemu.Cemu.png"
+    },
+    {
+      "id": "eden",
+      "name": "Eden",
+      "systems": [
+        "switch"
+      ],
+      "description": "Nintendo Switch emulator.",
+      "homepage": "https://eden-emu.dev",
+      "binaries": [
+        "eden"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "appimage",
+            "url": "https://stable.eden-emu.dev/v0.2.1/Eden-Linux-v0.2.1-amd64-gcc-standard.AppImage",
+            "version": "v0.2.1",
+            "sha256": "2fae658397daf13c118082a3eb65d61a6519967b5e22e6667756baecf6000c5a",
+            "size": 70220957
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "appimage",
+            "url": "https://stable.eden-emu.dev/v0.2.1/Eden-Linux-v0.2.1-aarch64-gcc-standard.AppImage",
+            "version": "v0.2.1",
+            "sha256": "494014f67401bbbe7d48da7128d769734cf97863bfb2349d48cd2a118173e769",
+            "size": 63596174
+          }
+        ]
+      }
+    },
+    {
+      "id": "xemu",
+      "name": "xemu",
+      "systems": [
+        "xbox"
+      ],
+      "description": "Original Xbox emulator.",
+      "homepage": "https://xemu.app",
+      "binaries": [
+        "xemu"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-x86_64.AppImage",
+            "version": "v0.8.139",
+            "sha256": "220282aacf09b30b35c55ba900a774fb6940c70deca1408bc70a4c9cc67c322f",
+            "size": 17971704
+          },
+          {
+            "type": "flatpak",
+            "ref": "app.xemu.xemu",
+            "remote": "flathub"
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-aarch64.AppImage",
+            "version": "v0.8.139",
+            "sha256": "5f132b3a97c365bf22e8dc286954586ee0cf2202d63958dfcebc8fe9d742ecd4",
+            "size": 16706056
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/app.xemu.xemu.png"
+    },
+    {
+      "id": "xenia-edge",
+      "name": "Xenia Edge",
+      "systems": [
+        "xbox360"
+      ],
+      "description": "Xbox 360 emulator, native Linux fork of Xenia. Experimental.",
+      "homepage": "https://github.com/has207/xenia-edge",
+      "binaries": [
+        "xenia-edge",
+        "xenia_edge"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/has207/xenia-edge/releases/download/c0f4649/xenia_edge_linux.AppImage",
+            "version": "c0f4649",
+            "sha256": "3128b4b87192812d6870a04f26e7fbc9943796201d5c601269ea0032978ecaac",
+            "size": 27724280
+          }
+        ]
+      }
+    },
+    {
+      "id": "flycast",
+      "name": "Flycast",
+      "systems": [
+        "dreamcast",
+        "naomi",
+        "atomiswave"
+      ],
+      "description": "Dreamcast, Naomi and Atomiswave emulator.",
+      "homepage": "https://github.com/flyinghead/flycast",
+      "binaries": [
+        "flycast"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/flyinghead/flycast/releases/download/v2.7/flycast-x86_64-2.7.AppImage",
+            "version": "v2.7",
+            "sha256": "5b9f8a636a6acb8446bc78fe96650d8cb8233ac9f8ce69665dab3f39a1cbaae1",
+            "size": 20396536
+          },
+          {
+            "type": "flatpak",
+            "ref": "org.flycast.Flycast",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.flycast.Flycast.png"
+    }
+  ],
+  "cores": {
+    "info": "https://buildbot.libretro.com/assets/frontend/info.zip",
+    "items": [
+      {
+        "id": "gambatte",
+        "name": "Gambatte",
+        "systems": [
+          "gb",
+          "gbc"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/gambatte_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "e09352e9"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/gambatte_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "998fdfa8"
+          }
+        }
+      },
+      {
+        "id": "mgba",
+        "name": "mGBA",
+        "systems": [
+          "gba",
+          "gb",
+          "gbc"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mgba_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "5474b5a7"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mgba_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "3be1fba3"
+          }
+        }
+      },
+      {
+        "id": "melondsds",
+        "name": "melonDS DS",
+        "systems": [
+          "nds"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/melondsds_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "78c08a1d"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/melondsds_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "1af7da93"
+          }
+        }
+      },
+      {
+        "id": "mesen",
+        "name": "Mesen",
+        "systems": [
+          "nes"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mesen_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "bf25c4f1"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mesen_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "40c5e11b"
+          }
+        }
+      },
+      {
+        "id": "fceumm",
+        "name": "FCEUmm",
+        "systems": [
+          "nes"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/fceumm_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "669ec388"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/fceumm_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "bd68e91a"
+          }
+        }
+      },
+      {
+        "id": "snes9x",
+        "name": "Snes9x",
+        "systems": [
+          "snes"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/snes9x_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "e211e6cb"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/snes9x_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "dbb84d13"
+          }
+        }
+      },
+      {
+        "id": "mupen64plus_next",
+        "name": "Mupen64Plus-Next",
+        "systems": [
+          "n64"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mupen64plus_next_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "d15fccb8"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mupen64plus_next_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "224c9ab0"
+          }
+        }
+      },
+      {
+        "id": "flycast",
+        "name": "Flycast",
+        "systems": [
+          "dreamcast",
+          "naomi",
+          "atomiswave"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/flycast_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "3572a39c"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/flycast_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "0a087efd"
+          }
+        }
+      },
+      {
+        "id": "swanstation",
+        "name": "SwanStation",
+        "systems": [
+          "psx"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/swanstation_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "eca78714"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/swanstation_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "1752dcac"
+          }
+        }
+      },
+      {
+        "id": "mednafen_psx_hw",
+        "name": "Beetle PSX HW",
+        "systems": [
+          "psx"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_psx_hw_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "f63496e4"
+          }
+        }
+      },
+      {
+        "id": "pcsx_rearmed",
+        "name": "PCSX ReARMed",
+        "systems": [
+          "psx"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/pcsx_rearmed_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "29458653"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/pcsx_rearmed_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "27586af7"
+          }
+        }
+      },
+      {
+        "id": "ppsspp",
+        "name": "PPSSPP",
+        "systems": [
+          "psp"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/ppsspp_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "a3b66d4b"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/ppsspp_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "3d470577"
+          }
+        }
+      },
+      {
+        "id": "nestopia",
+        "name": "Nestopia UE",
+        "systems": [
+          "nes"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/nestopia_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "0e312460"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/nestopia_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "6abc30a0"
+          }
+        }
+      },
+      {
+        "id": "sameboy",
+        "name": "SameBoy",
+        "systems": [
+          "gb",
+          "gbc"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/sameboy_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "54579d8e"
+          }
+        }
+      },
+      {
+        "id": "gpsp",
+        "name": "gpSP",
+        "systems": [
+          "gba"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/gpsp_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "6b463820"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/gpsp_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "bd131557"
+          }
+        }
+      },
+      {
+        "id": "vbam",
+        "name": "VBA-M",
+        "systems": [
+          "gba",
+          "gb",
+          "gbc"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/vbam_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "f65222fa"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/vbam_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "fd481c61"
+          }
+        }
+      },
+      {
+        "id": "desmume",
+        "name": "DeSmuME",
+        "systems": [
+          "nds"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/desmume_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "75dcc4c4"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/desmume_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "ddafac49"
+          }
+        }
+      },
+      {
+        "id": "bsnes",
+        "name": "bsnes",
+        "systems": [
+          "snes"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/bsnes_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "8e9c7841"
+          }
+        }
+      },
+      {
+        "id": "parallel_n64",
+        "name": "ParaLLEl N64",
+        "systems": [
+          "n64"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/parallel_n64_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "57076b5a"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/parallel_n64_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "3c3b85ab"
+          }
+        }
+      },
+      {
+        "id": "genesis_plus_gx",
+        "name": "Genesis Plus GX",
+        "systems": [
+          "megadrive",
+          "mastersystem",
+          "gamegear",
+          "segacd",
+          "sg1000"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/genesis_plus_gx_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "66e63d9a"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/genesis_plus_gx_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "5a032901"
+          }
+        }
+      },
+      {
+        "id": "picodrive",
+        "name": "PicoDrive",
+        "systems": [
+          "megadrive",
+          "mastersystem",
+          "sega32x",
+          "segacd"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/picodrive_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "72d8a771"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/picodrive_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "c47a39e0"
+          }
+        }
+      },
+      {
+        "id": "mednafen_pce_fast",
+        "name": "Beetle PCE Fast",
+        "systems": [
+          "pcengine",
+          "pcenginecd"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_pce_fast_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "fddbcf4b"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mednafen_pce_fast_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "817af3a5"
+          }
+        }
+      },
+      {
+        "id": "mednafen_saturn",
+        "name": "Beetle Saturn",
+        "systems": [
+          "saturn"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_saturn_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "65455dc7"
+          }
+        }
+      },
+      {
+        "id": "yabasanshiro",
+        "name": "YabaSanshiro",
+        "systems": [
+          "saturn"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/yabasanshiro_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "7c613a51"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/yabasanshiro_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "f4cc209c"
+          }
+        }
+      },
+      {
+        "id": "fbneo",
+        "name": "FinalBurn Neo",
+        "systems": [
+          "fbneo",
+          "neogeo",
+          "arcade"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/fbneo_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "92a99e81"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/fbneo_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "07ac5abc"
+          }
+        }
+      },
+      {
+        "id": "mame",
+        "name": "MAME",
+        "systems": [
+          "mame",
+          "arcade"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mame_libretro.so.zip",
+            "version": "2026-10-16",
+            "crc32": "562576a2"
+          }
+        }
+      },
+      {
+        "id": "mame2003_plus",
+        "name": "MAME 2003-Plus",
+        "systems": [
+          "mame",
+          "arcade"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mame2003_plus_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "a939a505"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mame2003_plus_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "a28298e2"
+          }
+        }
+      },
+      {
+        "id": "stella",
+        "name": "Stella",
+        "systems": [
+          "atari2600"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/stella_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "b44faaf6"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/stella_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "076f44f2"
+          }
+        }
+      },
+      {
+        "id": "handy",
+        "name": "Handy",
+        "systems": [
+          "lynx"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/handy_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "524e4ae6"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/handy_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "d6623bbc"
+          }
+        }
+      },
+      {
+        "id": "mednafen_ngp",
+        "name": "Beetle NeoPop",
+        "systems": [
+          "ngp",
+          "ngpc"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_ngp_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "f3b6215e"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mednafen_ngp_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "dd65a437"
+          }
+        }
+      },
+      {
+        "id": "mednafen_wswan",
+        "name": "Beetle WonderSwan",
+        "systems": [
+          "wswan",
+          "wswanc"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_wswan_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "3a224a58"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mednafen_wswan_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "49552756"
+          }
+        }
+      },
+      {
+        "id": "bluemsx",
+        "name": "blueMSX",
+        "systems": [
+          "msx1",
+          "msx2",
+          "colecovision"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/bluemsx_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "8e77cbd1"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/bluemsx_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "87141da6"
+          }
+        }
+      },
+      {
+        "id": "puae",
+        "name": "PUAE",
+        "systems": [
+          "amiga500",
+          "amiga1200",
+          "amigacd32"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/puae_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "8307d571"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/puae_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "260e4be1"
+          }
+        }
+      },
+      {
+        "id": "vice_x64",
+        "name": "VICE x64",
+        "systems": [
+          "c64"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_x64_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "a3f447ea"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/vice_x64_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "c3e49497"
+          }
+        }
+      },
+      {
+        "id": "dosbox_pure",
+        "name": "DOSBox Pure",
+        "systems": [
+          "dos"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/dosbox_pure_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "2223ea5b"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/dosbox_pure_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "1a2c8160"
+          }
+        }
+      },
+      {
+        "id": "scummvm",
+        "name": "ScummVM",
+        "systems": [
+          "scummvm"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/scummvm_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "d0fa6ac2"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/scummvm_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "d4939330"
+          }
+        }
+      },
+      {
+        "id": "opera",
+        "name": "Opera",
+        "systems": [
+          "3do"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/opera_libretro.so.zip",
+            "version": "2026-10-28",
+            "crc32": "d774ef55"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/opera_libretro.so.zip",
+            "version": "2026-10-28",
+            "crc32": "437b37d4"
+          }
+        }
+      },
+      {
+        "id": "prboom",
+        "name": "PrBoom",
+        "systems": [
+          "prboom"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/prboom_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "a570b5d7"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/prboom_libretro.so.zip",
+            "version": "2026-11-06",
+            "crc32": "0d40ef56"
+          }
+        }
+      }
+    ]
+  }
+}

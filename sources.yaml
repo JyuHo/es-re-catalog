@@ -1,0 +1,218 @@
+# Where every emulator and core of the EmulationStation-RE catalog comes from.
+# tools/build_catalog.py turns this file into catalog.json (see README.md).
+#
+# Standalone emulators
+#   id        the emulator name es-launcher and es_systems.cfg use (<emulator name="...">)
+#   binaries  executable names that mean "already installed by the system package manager"
+#   logo      optional: a file under logos/ or an https URL; defaults to the Flathub icon
+#   builds    per architecture, in order of preference. ES installs the first one it can:
+#     type: appimage   repo + asset (regex), or url + version
+#     type: archive    same, plus exec: regex of the executable inside the archive
+#     type: flatpak    ref (+ remote, default flathub), installed with flatpak --user
+#   GitHub sources may set prerelease: true, rolling: true (a tag such as "latest" that is
+#   re-published), tag: regex, and forge: base URL of a Forgejo/Gitea server.
+#
+# Cores (libretro buildbot nightlies)
+#   id      core name, as in <core name="..."> (file: buildbot name when it differs)
+#   arch    architectures to offer it on, default x86_64 and aarch64
+
+standalone:
+  - id: retroarch
+    name: RetroArch
+    description: Frontend for the libretro cores of the second tab.
+    systems: []
+    homepage: https://www.retroarch.com
+    binaries: [retroarch]
+    builds:
+      x86_64:
+        - { type: flatpak, ref: org.libretro.RetroArch }
+      aarch64:
+        - { type: flatpak, ref: org.libretro.RetroArch }
+
+  - id: duckstation
+    name: DuckStation
+    description: PlayStation emulator. Free for non-commercial use only.
+    systems: [psx]
+    homepage: https://www.duckstation.org
+    license: CC-BY-NC-ND-4.0
+    binaries: [duckstation-qt, duckstation]
+    builds:
+      x86_64:
+        - { type: appimage, repo: stenzek/duckstation, asset: '^DuckStation-x64\.AppImage$', rolling: true }
+      aarch64:
+        - { type: appimage, repo: stenzek/duckstation, asset: '^DuckStation-arm64\.AppImage$', rolling: true }
+
+  - id: pcsx2
+    name: PCSX2
+    description: PlayStation 2 emulator.
+    systems: [ps2]
+    homepage: https://pcsx2.net
+    binaries: [pcsx2-qt, pcsx2]
+    builds:
+      x86_64:
+        - { type: appimage, repo: PCSX2/pcsx2, asset: '^pcsx2-v[0-9.]+-linux-appimage-x64-Qt\.AppImage$' }
+        - { type: flatpak, ref: net.pcsx2.PCSX2 }
+
+  - id: rpcs3
+    name: RPCS3
+    description: PlayStation 3 emulator.
+    systems: [ps3]
+    homepage: https://rpcs3.net
+    binaries: [rpcs3]
+    builds:
+      x86_64:
+        - { type: appimage, repo: RPCS3/rpcs3-binaries-linux, asset: '^rpcs3-v.*_linux64\.AppImage$' }
+        - { type: flatpak, ref: net.rpcs3.RPCS3 }
+      aarch64:
+        - { type: appimage, repo: RPCS3/rpcs3-binaries-linux-arm64, asset: '^rpcs3-v.*_linux_aarch64\.AppImage$' }
+
+  - id: ppsspp
+    name: PPSSPP
+    description: PSP emulator.
+    systems: [psp]
+    homepage: https://www.ppsspp.org
+    binaries: [PPSSPPSDL, ppsspp-sdl, ppsspp-qt, ppsspp]
+    builds:
+      x86_64:
+        - { type: appimage, repo: hrydgard/ppsspp, asset: '^PPSSPP-v[0-9.]+-anylinux-x86_64\.AppImage$' }
+        - { type: flatpak, ref: org.ppsspp.PPSSPP }
+      aarch64:
+        - { type: appimage, repo: hrydgard/ppsspp, asset: '^PPSSPP-v[0-9.]+-anylinux-aarch64\.AppImage$' }
+        - { type: flatpak, ref: org.ppsspp.PPSSPP }
+
+  - id: melonds
+    name: melonDS
+    description: Nintendo DS emulator.
+    systems: [nds]
+    homepage: https://melonds.kuribo64.net
+    binaries: [melonDS]
+    builds:
+      x86_64:
+        - { type: archive, repo: melonDS-emu/melonDS, asset: '^melonDS-[0-9.]+-appimage-x86_64\.zip$', exec: '\.AppImage$' }
+        - { type: flatpak, ref: net.kuribo64.melonDS }
+      aarch64:
+        - { type: archive, repo: melonDS-emu/melonDS, asset: '^melonDS-[0-9.]+-appimage-aarch64\.zip$', exec: '\.AppImage$' }
+        - { type: flatpak, ref: net.kuribo64.melonDS }
+
+  - id: azahar
+    name: Azahar
+    description: Nintendo 3DS emulator, successor of Citra and Lime3DS.
+    systems: [3ds]
+    homepage: https://azahar-emu.org
+    binaries: [azahar, azahar-qt]
+    builds:
+      x86_64:
+        - { type: appimage, repo: azahar-emu/azahar, asset: '^azahar\.AppImage$' }
+        - { type: flatpak, ref: org.azahar_emu.Azahar }
+
+  - id: dolphin
+    name: Dolphin
+    description: GameCube and Wii emulator.
+    systems: [gamecube, wii]
+    homepage: https://dolphin-emu.org
+    binaries: [dolphin-emu]
+    builds:
+      x86_64:
+        - { type: flatpak, ref: org.DolphinEmu.dolphin-emu }
+      aarch64:
+        - { type: flatpak, ref: org.DolphinEmu.dolphin-emu }
+
+  - id: cemu
+    name: Cemu
+    description: Wii U emulator.
+    systems: [wiiu]
+    homepage: https://cemu.info
+    binaries: [cemu, Cemu]
+    builds:
+      x86_64:
+        - { type: appimage, repo: cemu-project/Cemu, asset: '^Cemu-[0-9.]+-x86_64\.AppImage$' }
+        - { type: flatpak, ref: info.cemu.Cemu }
+
+  - id: eden
+    name: Eden
+    description: Nintendo Switch emulator.
+    systems: [switch]
+    homepage: https://eden-emu.dev
+    binaries: [eden]
+    builds:
+      x86_64:
+        - { type: appimage, forge: https://git.eden-emu.dev, repo: eden-emu/eden, asset: '^Eden-Linux-v[0-9.]+-amd64-gcc-standard\.AppImage$' }
+      aarch64:
+        - { type: appimage, forge: https://git.eden-emu.dev, repo: eden-emu/eden, asset: '^Eden-Linux-v[0-9.]+-aarch64-gcc-standard\.AppImage$' }
+
+  - id: xemu
+    name: xemu
+    description: Original Xbox emulator.
+    systems: [xbox]
+    homepage: https://xemu.app
+    binaries: [xemu]
+    builds:
+      x86_64:
+        - { type: appimage, repo: xemu-project/xemu, asset: '^xemu-[0-9.]+-x86_64\.AppImage$' }
+        - { type: flatpak, ref: app.xemu.xemu }
+      aarch64:
+        - { type: appimage, repo: xemu-project/xemu, asset: '^xemu-[0-9.]+-aarch64\.AppImage$' }
+
+  - id: xenia-edge
+    name: Xenia Edge
+    description: Xbox 360 emulator, native Linux fork of Xenia. Experimental.
+    systems: [xbox360]
+    homepage: https://github.com/has207/xenia-edge
+    binaries: [xenia-edge, xenia_edge]
+    builds:
+      x86_64:
+        # Every release is tagged with a commit hash; the AppImage name never changes
+        - { type: appimage, repo: has207/xenia-edge, asset: '^xenia_edge_linux\.AppImage$' }
+
+  - id: flycast
+    name: Flycast
+    description: Dreamcast, Naomi and Atomiswave emulator.
+    systems: [dreamcast, naomi, atomiswave]
+    homepage: https://github.com/flyinghead/flycast
+    binaries: [flycast]
+    builds:
+      x86_64:
+        - { type: appimage, repo: flyinghead/flycast, asset: '^flycast-x86_64-[0-9.]+\.AppImage$' }
+        - { type: flatpak, ref: org.flycast.Flycast }
+
+cores:
+  # The eight default cores of es-launcher
+  - { id: gambatte, name: Gambatte, systems: [gb, gbc] }
+  - { id: mgba, name: mGBA, systems: [gba, gb, gbc] }
+  - { id: melondsds, name: melonDS DS, systems: [nds] }
+  - { id: mesen, name: Mesen, systems: [nes] }
+  - { id: fceumm, name: FCEUmm, systems: [nes] }
+  - { id: snes9x, name: Snes9x, systems: [snes] }
+  - { id: mupen64plus_next, name: Mupen64Plus-Next, systems: [n64] }
+  - { id: flycast, name: Flycast, systems: [dreamcast, naomi, atomiswave] }
+  # Alternatives
+  - { id: swanstation, name: SwanStation, systems: [psx] }
+  - { id: mednafen_psx_hw, name: Beetle PSX HW, systems: [psx], arch: [x86_64] }
+  - { id: pcsx_rearmed, name: PCSX ReARMed, systems: [psx] }
+  - { id: ppsspp, name: PPSSPP, systems: [psp] }
+  - { id: nestopia, name: Nestopia UE, systems: [nes] }
+  - { id: sameboy, name: SameBoy, systems: [gb, gbc] }
+  - { id: gpsp, name: gpSP, systems: [gba] }
+  - { id: vbam, name: VBA-M, systems: [gba, gb, gbc] }
+  - { id: desmume, name: DeSmuME, systems: [nds] }
+  - { id: bsnes, name: bsnes, systems: [snes], arch: [x86_64] }
+  - { id: parallel_n64, name: ParaLLEl N64, systems: [n64] }
+  - { id: genesis_plus_gx, name: Genesis Plus GX, systems: [megadrive, mastersystem, gamegear, segacd, sg1000] }
+  - { id: picodrive, name: PicoDrive, systems: [megadrive, mastersystem, sega32x, segacd] }
+  - { id: mednafen_pce_fast, name: Beetle PCE Fast, systems: [pcengine, pcenginecd] }
+  - { id: mednafen_saturn, name: Beetle Saturn, systems: [saturn], arch: [x86_64] }
+  - { id: yabasanshiro, name: YabaSanshiro, systems: [saturn] }
+  - { id: fbneo, name: FinalBurn Neo, systems: [fbneo, neogeo, arcade] }
+  - { id: mame, name: MAME, systems: [mame, arcade], arch: [x86_64] }
+  - { id: mame2003_plus, name: MAME 2003-Plus, systems: [mame, arcade] }
+  - { id: stella, name: Stella, systems: [atari2600] }
+  - { id: handy, name: Handy, systems: [lynx] }
+  - { id: mednafen_ngp, name: Beetle NeoPop, systems: [ngp, ngpc] }
+  - { id: mednafen_wswan, name: Beetle WonderSwan, systems: [wswan, wswanc] }
+  - { id: bluemsx, name: blueMSX, systems: [msx1, msx2, colecovision] }
+  - { id: puae, name: PUAE, systems: [amiga500, amiga1200, amigacd32] }
+  - { id: vice_x64, name: VICE x64, systems: [c64] }
+  - { id: dosbox_pure, name: DOSBox Pure, systems: [dos] }
+  - { id: scummvm, name: ScummVM, systems: [scummvm] }
+  - { id: opera, name: Opera, systems: [3do] }
+  - { id: prboom, name: PrBoom, systems: [prboom] }

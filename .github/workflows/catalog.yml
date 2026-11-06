@@ -1,0 +1,54 @@
+name: catalog
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "17 4 * * *"   # every day: pick up new emulator releases and core nightlies
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog-${{ github.ref }}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: python3 -m unittest discover tests
+      - run: python3 tools/build_catalog.py --check
+
+  build:
+    # Only main publishes a catalog; pull requests are checked above.
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Build catalog.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/build_catalog.py
+      - name: Commit catalog.json
+        run: |
+          if git diff --quiet -- catalog.json && git ls-files --error-unmatch catalog.json >/dev/null 2>&1; then
+            echo "catalog.json unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add catalog.json
+          git commit -m "Update catalog.json"
+          git push

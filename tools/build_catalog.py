@@ -116,10 +116,27 @@ class Resolver:
             self._releases[key] = json.loads(self.get(url, "application/json"))
         return self._releases[key]
 
+    def latest_release(self, repo: str) -> dict[str, Any] | None:
+        key = f"latest:{repo}"
+        if key not in self._releases:
+            try:
+                data = json.loads(self.get(f"https://api.github.com/repos/{repo}/releases/latest", "application/json"))
+                self._releases[key] = [data] if isinstance(data, dict) and "tag_name" in data else []
+            except (SourceError, ValueError):
+                self._releases[key] = []
+        return self._releases[key][0] if self._releases[key] else None
+
     def resolve_github(self, emu_id: str, arch: str, src: dict[str, Any]) -> dict[str, Any]:
         pattern = re.compile(src["asset"])
         tag_filter = re.compile(src["tag"]) if "tag" in src else None
-        for release in self.releases(src["repo"], src.get("forge")):
+        candidates = self.releases(src["repo"], src.get("forge"))
+        # Projects that publish a nightly prerelease per commit (PCSX2) push their stable
+        # release out of the first page: ask GitHub for it directly.
+        if not src.get("prerelease") and not src.get("forge"):
+            latest = self.latest_release(src["repo"])
+            if latest:
+                candidates = [latest] + candidates
+        for release in candidates:
             if release.get("draft"):
                 continue
             if release.get("prerelease") and not src.get("prerelease", False):

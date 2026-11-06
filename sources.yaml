@@ -153,6 +153,17 @@ standalone:
       aarch64:
         - { type: appimage, repo: xemu-project/xemu, asset: '^xemu-[0-9.]+-aarch64\.AppImage$' }
 
+  - id: xenia-edge
+    name: Xenia Edge
+    description: Xbox 360 emulator, native Linux fork of Xenia. Experimental.
+    systems: [xbox360]
+    homepage: https://github.com/has207/xenia-edge
+    binaries: [xenia-edge, xenia_edge]
+    builds:
+      x86_64:
+        # Every release is tagged with a commit hash; the AppImage name never changes
+        - { type: appimage, repo: has207/xenia-edge, asset: '^xenia_edge_linux\.AppImage$' }
+
   - id: flycast
     name: Flycast
     description: Dreamcast, Naomi and Atomiswave emulator.

@@ -111,6 +111,19 @@ class BuildCatalogTests(unittest.TestCase):
         self.assertEqual(catalog["standalone"][0]["builds"], previous["standalone"][0]["builds"])
         self.assertTrue(resolver.errors)
 
+    def test_stable_release_beyond_the_first_page_is_found(self):
+        nightlies = [{"tag_name": f"v2.9.{i}", "prerelease": True, "draft": False, "assets": []} for i in range(20)]
+        stable = GH_RELEASES[1]
+        def get(url, accept=None):
+            if url.endswith("/releases/latest"):
+                return json.dumps(stable).encode()
+            if "/releases?" in url:
+                return json.dumps(nightlies).encode()
+            return INDEX.encode()
+        resolver = bc.Resolver(None, get=get, hasher=FakeNet().hasher)
+        catalog = bc.build_catalog(SOURCES, resolver)
+        self.assertEqual(catalog["standalone"][0]["builds"]["x86_64"][0]["version"], "v2.0")
+
     def test_bad_sources_are_reported(self):
         problems = bc.validate_sources({"standalone": [
             {"id": "Bad Id", "name": "x", "systems": [],

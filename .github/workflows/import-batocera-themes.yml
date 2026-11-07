@@ -5,6 +5,8 @@ name: import Batocera themes
 # request before it reaches main.
 on:
   workflow_dispatch:
+  push:
+    branches: [themes]   # one-time seeding on this pull request's branch; removed after
 
 permissions:
   contents: write

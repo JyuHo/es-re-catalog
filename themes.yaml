@@ -1,6 +1,7 @@
 # Themes offered by EmulationStation-RE's theme downloader. tools/build_themes.py turns
 # this list into themes.json. Fields: name, url (GitHub repository), author, screenshot
-# (a path in this repository or an https URL). Seeded from Batocera's theme list.
+# (a path in this repository or an https URL), size (MB of the download, optional:
+# GitHub's repository size otherwise). Seeded from Batocera's theme list.
 - name: A-starwars-theme
   url: https://github.com/soaremicheledavid/ES-A-StarWars-Theme
   author: soaremicheledavid

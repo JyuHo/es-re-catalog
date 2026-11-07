@@ -5,316 +5,395 @@
 - name: A-starwars-theme
   url: https://github.com/soaremicheledavid/ES-A-StarWars-Theme
   author: soaremicheledavid
+  size: 34
   screenshot: screenshots/A-starwars-theme.jpg
 - name: A-touch-of-glass
   url: https://github.com/Scotty-Retro/ES-Theme-A-Touch-of-Glass
   author: Scotty-Retro
+  size: 2384
   screenshot: screenshots/A-touch-of-glass.jpg
 - name: AX-SlideMix
   url: https://github.com/soaremicheledavid/ES-Theme-AX-SlideMix
   author: soaremicheledavid
+  size: 69
   screenshot: screenshots/AX-SlideMix.jpg
 - name: AI-Hypertocera
   url: https://github.com/TheMiniCakeTV/AI-HYPERTOCERA-THE-MINI-CAKE-TV
   author: TheMiniCakeTV
+  size: 1056
   screenshot: screenshots/AI-Hypertocera.jpg
 - name: Alekfull-NX
   url: https://github.com/fagnerpc/Alekfull-NX
   author: fagnerpc
+  size: 183
   screenshot: screenshots/Alekfull-NX.jpg
 - name: Animatics-DX
   url: https://github.com/Snapouille/es-theme-Animatics-DX
   author: Snapouille
+  size: 877
   screenshot: screenshots/Animatics-DX.jpg
 - name: Animetaverse
   url: https://github.com/riofriz/es-theme-animetaverse
   author: riofriz
+  size: 49
   screenshot: screenshots/Animetaverse.jpg
 - name: Arcadeplanet
   url: https://github.com/EvilDindon/ES-THEME-ARCADEPLANET
   author: EvilDindon
+  size: 162
   screenshot: screenshots/Arcadeplanet.jpg
 - name: Art-Book-Next
   url: https://github.com/anthonycaccese/art-book-next-es
   author: anthonycaccese
+  size: 280
   screenshot: screenshots/Art-Book-Next.jpg
 - name: Artflix
   url: https://github.com/fagnerpc/Alekfull-ARTFLIX
   author: fagnerpc
+  size: 386
   screenshot: screenshots/Artflix.jpg
 - name: Artflix-Cobalto
   url: https://github.com/galisteogames/ARTFLIX-Cobalto
   author: galisteogames
+  size: 543
   screenshot: screenshots/Artflix-Cobalto.jpg
 - name: Atlas-es
   url: https://github.com/mirko93s/atlas-es
   author: mirko93s
+  size: 83
   screenshot: screenshots/Atlas-es.jpg
 - name: Batocera-Club-Reloaded
   url: https://github.com/lehcimcramtrebor/es-theme-batocer-club-reloaded
   author: lehcimcramtrebor
+  size: 881
   screenshot: screenshots/Batocera-Club-Reloaded.jpg
 - name: BatWiiCera
   url: https://github.com/yiddifliddo/BatWiiCera-theme
   author: yiddifliddo
+  size: 20
   screenshot: screenshots/BatWiiCera.jpg
 - name: BichromaticPads
   url: https://github.com/DarrenCarol/Bichromatic-Pads
   author: DarrenCarol
+  size: 7
   screenshot: screenshots/BichromaticPads.jpg
 - name: BrowBows-Heder
   url: https://github.com/hedergim/es-theme-BrowBows-Heder
   author: hedergim
+  size: 1762
   screenshot: screenshots/BrowBows-Heder.jpg
 - name: Canvas
   url: https://github.com/Siddy212/canvas-es
   author: Siddy212
+  size: 168
   screenshot: screenshots/Canvas.jpg
 - name: CarbonX
   url: https://github.com/soaremicheledavid/ES-Theme-CarbonX
   author: soaremicheledavid
+  size: 7
   screenshot: screenshots/CarbonX.jpg
 - name: Ckau-Book
   url: https://github.com/CkauNui/ckau-book
   author: CkauNui
+  size: 1057
   screenshot: screenshots/Ckau-Book.jpg
 - name: CleanUI
   url: https://github.com/Kikk0s/CleanUi
   author: Kikk0s
+  size: 815
   screenshot: screenshots/CleanUI.jpg
 - name: Colorful-Simplified
   url: https://github.com/anthonycaccese/colorful-simplified-es
   author: anthonycaccese
+  size: 32
   screenshot: screenshots/Colorful-Simplified.jpg
 - name: ComicScrap
   url: https://github.com/lehcimcramtrebor/es-theme-comicscrap
   author: lehcimcramtrebor
+  size: 298
   screenshot: screenshots/ComicScrap.jpg
 - name: ComicScrapV2
   url: https://github.com/lehcimcramtrebor/es-theme-ComicScrapV2
   author: lehcimcramtrebor
+  size: 207
   screenshot: screenshots/ComicScrapV2.jpg
 - name: DarkGames
   url: https://github.com/GoldenGames320/es-theme-DarkGames
   author: GoldenGames320
+  size: 731
   screenshot: screenshots/DarkGames.jpg
 - name: DynamicBox
   url: https://github.com/JandersonJS/DynamicBox
   author: JandersonJS
+  size: 590
   screenshot: screenshots/DynamicBox.jpg
 - name: EpicNoir
   url: https://github.com/c64-dev/es-theme-epicnoir
   author: c64-dev
+  size: 28
   screenshot: screenshots/EpicNoir.jpg
 - name: Es-theme-Reload
   url: https://github.com/RobG66/es-theme-RELOAD-
   author: RobG66
+  size: 1347
   screenshot: screenshots/Es-theme-Reload.jpg
 - name: Es-theme-RBHS
   url: https://github.com/Rogerio848484/es-theme-RBHS
   author: Rogerio848484
+  size: 2474
   screenshot: screenshots/Es-theme-RBHS.jpg
 - name: FakeXMB
   url: https://github.com/JandersonJS/FakeXMB
   author: JandersonJS
+  size: 480
   screenshot: screenshots/FakeXMB.jpg
 - name: Fanartstar
   url: https://github.com/BobMoraneRetro/one4all4one-fanartstar-bobmorane
   author: BobMoraneRetro
+  size: 1627
   screenshot: screenshots/Fanartstar.jpg
 - name: Forever
   url: https://github.com/lehcimcramtrebor/es-theme-forever
   author: lehcimcramtrebor
+  size: 161
   screenshot: screenshots/Forever.jpg
 - name: GPi-Next-Pixel
   url: https://github.com/SamYStudiO/es-theme-next-pixel
   author: SamYStudiO
+  size: 589
   screenshot: screenshots/GPi-Next-Pixel.jpg
 - name: GPi-Super-Retroboy
   url: https://github.com/KALEL1981/es-theme-Super-Retroboy
   author: KALEL1981
+  size: 2
   screenshot: screenshots/GPi-Super-Retroboy.jpg
 - name: Hexa
   url: https://github.com/lehcimcramtrebor/es-theme-HEXA
   author: lehcimcramtrebor
+  size: 598
   screenshot: screenshots/Hexa.jpg
 - name: Hexa-handheld
   url: https://github.com/lehcimcramtrebor/es-theme-HEXA-HANDHELD
   author: lehcimcramtrebor
+  size: 77
   screenshot: screenshots/Hexa-handheld.jpg
 - name: Hursty-ArcadeParadise
   url: https://github.com/RetroHursty69/RetroBat-ArcadeParadise
   author: RetroHursty69
+  size: 1130
   screenshot: screenshots/Hursty-ArcadeParadise.jpg
 - name: Hursty-ComicPop
   url: https://github.com/RetroHursty69/RetroBat-ComicPop
   author: RetroHursty69
+  size: 581
   screenshot: screenshots/Hursty-ComicPop.jpg
 - name: Hursty-CosmicRise
   url: https://github.com/RetroHursty69/Retrobat-CosmicRiseRB
   author: RetroHursty69
+  size: 491
   screenshot: screenshots/Hursty-CosmicRise.jpg
 - name: Hursty-Crescendo
   url: https://github.com/RetroHursty69/Retrobat-Crescendo
   author: RetroHursty69
+  size: 1714
   screenshot: screenshots/Hursty-Crescendo.jpg
 - name: Hursty-HeyChromey
   url: https://github.com/RetroHursty69/Retrobat-HeyChromeyRB
   author: RetroHursty69
+  size: 1198
   screenshot: screenshots/Hursty-HeyChromey.jpg
 - name: Hursty-Monochrome
   url: https://github.com/RetroHursty69/Retrobat-Monochrome
   author: RetroHursty69
+  size: 370
   screenshot: screenshots/Hursty-Monochrome.jpg
 - name: Hursty-SuperSweet
   url: https://github.com/RetroHursty69/Retrobat-SuperSweetRB
   author: RetroHursty69
+  size: 530
   screenshot: screenshots/Hursty-SuperSweet.jpg
 - name: Hursty-Uniflyered
   url: https://github.com/RetroHursty69/Retrobat-UniflyeredRB
   author: RetroHursty69
+  size: 839
   screenshot: screenshots/Hursty-Uniflyered.jpg
 - name: HUDGEM
   url: https://github.com/lehcimcramtrebor/es-theme-HUDGEM
   author: lehcimcramtrebor
+  size: 575
   screenshot: screenshots/HUDGEM.jpg
 - name: Hyperbat
   url: https://github.com/BobMoraneRetro/one4all4one-hyperbat-bobmorane
   author: BobMoraneRetro
+  size: 2494
   screenshot: screenshots/Hyperbat.jpg
 - name: Hypermax-Plus-PixN
   url: https://github.com/PixelNostalgia/Hypermax-Plus-PixN
   author: PixelNostalgia
+  size: 1580
   screenshot: screenshots/Hypermax-Plus-PixN.jpg
 - name: Iconic-ES
   url: https://github.com/Delgan/iconic-es
   author: Delgan
+  size: 83
   screenshot: screenshots/Iconic-ES.jpg
 - name: Immersive
   url: https://github.com/DarrenCarol/Immersive
   author: DarrenCarol
+  size: 4
   screenshot: screenshots/Immersive.jpg
 - name: Immersive-v2
   url: https://github.com/DarrenCarol/ImmersiveV2
   author: DarrenCarol
+  size: 4
   screenshot: screenshots/Immersive-v2.jpg
 - name: Knulli
   url: https://github.com/symbuzzer/es-theme-knulli
   author: symbuzzer
+  size: 23
   screenshot: screenshots/Knulli.jpg
 - name: Maximusbat
   url: https://github.com/MIKCPU/Maximusbat-theme
   author: MIKCPU
+  size: 2347
   screenshot: screenshots/Maximusbat.jpg
 - name: Meringue_Knulli
   url: https://github.com/kthod861/Meringue_Knulli
   author: kthod861
+  size: 207
   screenshot: screenshots/Meringue_Knulli.jpg
 - name: Minima
   url: https://github.com/soaremicheledavid/ES-Theme-MINIMA
   author: soaremicheledavid
+  size: 15
   screenshot: screenshots/Minima.jpg
 - name: Minimal
   url: https://github.com/crcerror/es-theme-minimal
   author: crcerror
+  size: 6
   screenshot: screenshots/Minimal.jpg
 - name: Neon-Blast
   url: https://github.com/Scotty-Retro/Neon-BlastV1
   author: Scotty-Retro
+  size: 8338
   screenshot: screenshots/Neon-Blast.jpg
 - name: NESiCAxLive
   url: https://github.com/BobMoraneRetro/one4all4one-NESiCAxLive-bobmorane
   author: BobMoraneRetro
+  size: 1315
   screenshot: screenshots/NESiCAxLive.jpg
 - name: Neutral
   url: https://github.com/Mattersons/es-theme-neutral
   author: Mattersons
+  size: 31
   screenshot: screenshots/Neutral.jpg
 - name: Next-Level-Remix
   url: https://github.com/ordovice/es-theme-next-level-remix
   author: ordovice
+  size: 347
   screenshot: screenshots/Next-Level-Remix.jpg
 - name: Nomado-DX
   url: https://github.com/Snapouille/Nomado-DX
   author: Snapouille
+  size: 294
   screenshot: screenshots/Nomado-DX.jpg
 - name: OmegaDrive
   url: https://github.com/Arcanthur/OmegaDrive
   author: Arcanthur
+  size: 125
   screenshot: screenshots/OmegaDrive.jpg
 - name: P-10-menu
   url: https://github.com/anthonycaccese/p-10-menu-es
   author: anthonycaccese
+  size: 1
   screenshot: screenshots/P-10-menu.jpg
 - name: Piboy-BT
   url: https://github.com/Kikk0s/Piboy_BT
   author: Kikk0s
+  size: 6
   screenshot: screenshots/Piboy-BT.jpg
 - name: PiStation-X
   url: https://github.com/JandersonJS/es-theme-PiStation-X
   author: JandersonJS
+  size: 441
   screenshot: screenshots/PiStation-X.jpg
 - name: Platform
   url: https://github.com/lehcimcramtrebor/es-theme-platform
   author: lehcimcramtrebor
+  size: 1095
   screenshot: screenshots/Platform.jpg
 - name: Playstation-X
   url: https://github.com/pajarorrojo/es-theme-PlayStation-X
   author: pajarorrojo
+  size: 921
   screenshot: screenshots/Playstation-X.jpg
 - name: Pulse
   url: https://github.com/complicatiion/batocera_pulse_theme
   author: complicatiion
+  size: 57
   screenshot: screenshots/Pulse.jpg
 - name: RCBX
   url: https://github.com/lehcimcramtrebor/es-theme-RCBX
   author: lehcimcramtrebor
+  size: 184
   screenshot: screenshots/RCBX.jpg
 - name: Retro-Lux
   url: https://github.com/EvilDindon/ES-THEME-RETRO_LUX
   author: EvilDindon
+  size: 165
   screenshot: screenshots/Retro-Lux.jpg
 - name: RetroFix
   url: https://github.com/20GotoTen/es-theme-retrofix
   author: 20GotoTen
+  size: 82
   screenshot: screenshots/RetroFix.jpg
 - name: RetroFix-Mini
   url: https://github.com/20GotoTen/es-theme-retrofix-mini
   author: 20GotoTen
+  size: 78
   screenshot: screenshots/RetroFix-Mini.jpg
 - name: Retrorama-CE
   url: https://github.com/lipebello/es-theme-retrorama-ce
   author: lipebello
+  size: 231
   screenshot: screenshots/Retrorama-CE.jpg
 - name: Riescade
   url: https://github.com/marcoriesco/riescade_platform
   author: marcoriesco
+  size: 361
   screenshot: screenshots/Riescade.jpg
 - name: RVGM
   url: https://github.com/Darknior/RVGM-BT-Theme
   author: Darknior
+  size: 238
   screenshot: screenshots/RVGM.jpg
 - name: Sheezie2Clean
   url: https://github.com/Sheezie/Sheezie2Clean
   author: Sheezie
+  size: 244
   screenshot: screenshots/Sheezie2Clean.jpg
 - name: SimpleLife
   url: https://github.com/DarrenCarol/Simple_Life
   author: DarrenCarol
+  size: 4
   screenshot: screenshots/SimpleLife.jpg
 - name: Techdweeb
   url: https://github.com/anthonycaccese/techdweeb-es
   author: anthonycaccese
+  size: 1
   screenshot: screenshots/Techdweeb.jpg
 - name: Theme-basic
   url: https://github.com/lehcimcramtrebor/es-theme-basic
   author: lehcimcramtrebor
+  size: 500
   screenshot: screenshots/Theme-basic.jpg
 - name: Tiled
   url: https://github.com/GeekRhapsody/es-theme-tiled
   author: GeekRhapsody
+  size: 93
   screenshot: screenshots/Tiled.jpg
 - name: Zmax
   url: https://github.com/marcelobarpp/es-theme-zmax
   author: marcelobarpp
+  size: 819
   screenshot: screenshots/Zmax.jpg

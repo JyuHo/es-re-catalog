@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-11-07T11:02:14Z",
+  "generated": "2026-11-07T14:40:27Z",
   "standalone": [
     {
       "id": "retroarch",
@@ -108,10 +108,10 @@
         "x86_64": [
           {
             "type": "appimage",
-            "url": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-0a30785e060930ab1408fef66bef47a49b294077/rpcs3-v0.0.43-20569-0a30785e_linux64.AppImage",
-            "version": "build-0a30785e060930ab1408fef66bef47a49b294077",
-            "sha256": "167fa6cacf570471467e0d77ae3c4322a33fa48502a7564d7e9acadf8919c33e",
-            "size": 83057678
+            "url": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-13a3cd4266158911a8c555dda59005bc20fd2a66/rpcs3-v0.0.43-20570-13a3cd42_linux64.AppImage",
+            "version": "build-13a3cd4266158911a8c555dda59005bc20fd2a66",
+            "sha256": "41a888e275db309b53bebfe40c7042b233bf1f327f8c186a104c88b505d241d2",
+            "size": 83113295
           },
           {
             "type": "flatpak",
@@ -122,10 +122,10 @@
         "aarch64": [
           {
             "type": "appimage",
-            "url": "https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-0a30785e060930ab1408fef66bef47a49b294077/rpcs3-v0.0.43-20569-0a30785e_linux_aarch64.AppImage",
-            "version": "build-0a30785e060930ab1408fef66bef47a49b294077",
-            "sha256": "889e62e7b6be08e1412ca720534db0f6071a525e80a4dd923b6d984cade5e954",
-            "size": 79056164
+            "url": "https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-13a3cd4266158911a8c555dda59005bc20fd2a66/rpcs3-v0.0.43-20570-13a3cd42_linux_aarch64.AppImage",
+            "version": "build-13a3cd4266158911a8c555dda59005bc20fd2a66",
+            "sha256": "37c3c3cdd8f3fe8d01f07582d858675d4aa8343555db1941260db035770cb278",
+            "size": 79054547
           }
         ]
       },
@@ -398,10 +398,10 @@
         "x86_64": [
           {
             "type": "appimage",
-            "url": "https://github.com/has207/xenia-edge/releases/download/e4e94e5/xenia_edge_linux.AppImage",
-            "version": "e4e94e5",
-            "sha256": "1c73f73759e1fdc8135a178168f0fc164dd3b0ad14af66c382438f0c58ee965d",
-            "size": 27728376
+            "url": "https://github.com/has207/xenia-edge/releases/download/eaf4604/xenia_edge_linux.AppImage",
+            "version": "eaf4604",
+            "sha256": "9793fb3943b52e646e10062ca7b42278d73e2db1c097f8602b89fc12f0ea23ef",
+            "size": 27724280
           }
         ]
       }

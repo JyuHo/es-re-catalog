@@ -87,12 +87,18 @@ def build_themes(themes: list[dict[str, Any]], previous: dict[str, dict[str, Any
 
         try:
             entry.update(info(entry["theme_url"]))
+            # The download is the default branch's archive: a size given by hand (MB) beats
+            # GitHub's, which counts the whole history
+            if theme.get("size"):
+                entry["size"] = int(theme["size"])
         except (SourceError, ValueError, KeyError) as e:
             old = previous.get(theme["name"])
             log(f"warning: {theme['name']}: {e}" + ("; keeping the previous date and size" if old else ""))
             if old:
                 entry["last_update"] = old.get("last_update", "")
                 entry["size"] = old.get("size", 0)
+            if theme.get("size"):
+                entry["size"] = int(theme["size"])
         data.append(entry)
 
     return {"data": data}
@@ -125,6 +131,8 @@ def import_batocera(listing: dict[str, Any], base_url: str, get: Callable[[str],
         theme: dict[str, Any] = {"name": name, "url": url}
         if item.get("author"):
             theme["author"] = str(item["author"])
+        if isinstance(item.get("size"), int) and item["size"] > 0:
+            theme["size"] = item["size"]
 
         screenshot = str(item.get("screenshot", "")).strip()
         if screenshot:
@@ -170,7 +178,9 @@ def validate_themes(themes: Any, root: Path = ROOT) -> list[str]:
                 errors.append(f"{where}: screenshot must be a path or an https URL")
             elif not screenshot.startswith("https://") and not (root / screenshot).is_file():
                 errors.append(f"{where}: {screenshot} does not exist")
-        unknown = set(theme) - {"name", "url", "author", "screenshot"}
+        if "size" in theme and (not isinstance(theme["size"], int) or theme["size"] < 0):
+            errors.append(f"{where}: size must be a number of MB")
+        unknown = set(theme) - {"name", "url", "author", "screenshot", "size"}
         if unknown:
             errors.append(f"{where}: unknown field(s) {', '.join(sorted(unknown))}")
     return errors
@@ -201,7 +211,8 @@ def main() -> int:
         themes = import_batocera(listing, BATOCERA_THEMES, http_get, args.themes.parent / SCREENSHOTS)
         header = ("# Themes offered by EmulationStation-RE's theme downloader. tools/build_themes.py turns\n"
                   "# this list into themes.json. Fields: name, url (GitHub repository), author, screenshot\n"
-                  "# (a path in this repository or an https URL). Seeded from Batocera's theme list.\n")
+                  "# (a path in this repository or an https URL), size (MB of the download, optional:\n"
+                  "# GitHub's repository size otherwise). Seeded from Batocera's theme list.\n")
         args.themes.write_text(header + yaml.safe_dump(themes, allow_unicode=True, sort_keys=False, width=200))
         print(f"themes.yaml: {len(themes)} themes")
         return 0

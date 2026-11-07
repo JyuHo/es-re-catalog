@@ -39,7 +39,7 @@ class ImportTest(unittest.TestCase):
 
             self.assertEqual([t["name"] for t in themes], ["Alekfull-NX", "Carbon", "NoShot"])
             self.assertEqual(themes[0], {"name": "Alekfull-NX", "url": "https://github.com/fagnerpc/es-theme-alekfull-nx",
-                                         "author": "fagnerpc", "screenshot": "screenshots/alekfull-nx.jpg"})
+                                         "author": "fagnerpc", "size": 30, "screenshot": "screenshots/alekfull-nx.jpg"})
             self.assertEqual((shots / "alekfull-nx.jpg").read_bytes(), b"jpeg")
             self.assertEqual(themes[1]["url"], "https://github.com/fabricecaruso/es-theme-carbon")
             self.assertNotIn("screenshot", themes[1])   # its screenshot could not be fetched
@@ -51,6 +51,7 @@ class BuildTest(unittest.TestCase):
     THEMES = [
         {"name": "A", "url": "https://github.com/o/a", "author": "o", "screenshot": "screenshots/a.jpg"},
         {"name": "B", "url": "https://github.com/o/b"},
+        {"name": "C", "url": "https://github.com/o/c", "size": 40},
     ]
 
     def test_build(self):
@@ -67,6 +68,7 @@ class BuildTest(unittest.TestCase):
                                               "screenshot": "screenshots/a.jpg"})
         self.assertEqual(listing["data"][1]["last_update"], "2025-01-01")   # kept from the previous run
         self.assertEqual(listing["data"][1]["size"], 3)
+        self.assertEqual(listing["data"][2]["size"], 40)             # the size of themes.yaml wins
         self.assertEqual(bt.validate_output(listing), [])
 
     def test_repo_info(self):

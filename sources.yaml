@@ -35,6 +35,7 @@ standalone:
     systems: [psx]
     homepage: https://www.duckstation.org
     license: CC-BY-NC-ND-4.0
+    logo: logos/duckstation.png
     binaries: [duckstation-qt, duckstation]
     builds:
       x86_64:
@@ -133,6 +134,7 @@ standalone:
     description: Nintendo Switch emulator.
     systems: [switch]
     homepage: https://eden-emu.dev
+    logo: logos/eden.png
     binaries: [eden]
     builds:
       x86_64:
@@ -158,6 +160,7 @@ standalone:
     description: Xbox 360 emulator, native Linux fork of Xenia. Experimental.
     systems: [xbox360]
     homepage: https://github.com/has207/xenia-edge
+    logo: logos/xenia-edge.png
     binaries: [xenia-edge, xenia_edge]
     builds:
       x86_64:

@@ -58,6 +58,26 @@ ES downloads a single file:
 An architecture that has no build is simply absent: ES does not show the entry on that machine.
 A future incompatible change bumps `format`; ES ignores catalogs whose format it does not know.
 
+## Themes
+
+ES's theme downloader reads a second file:
+
+    https://raw.githubusercontent.com/JyuHo/es-re-catalog/main/themes.json
+
+* [`themes.yaml`](themes.yaml) is the list, by hand: `name`, `url` (a GitHub repository, which
+  ES downloads as `<url>/archive/<default branch>.zip`), `author`, and `screenshot` (a file of
+  [`screenshots/`](screenshots) or an https URL).
+* [`tools/build_themes.py`](tools/build_themes.py) adds the date of the last push and the size of
+  each repository and writes `themes.json`, in the format of Batocera's theme list
+  (`{"data": [{"theme", "theme_url", "author", "last_update", "up_to_date", "size", "screenshot"}]}`).
+  The daily `catalog` workflow runs it too.
+* The list was seeded from Batocera's: the `import Batocera themes` workflow (run by hand)
+  rewrites `themes.yaml` and `screenshots/` from <https://updates.batocera.org/themes.json>,
+  keeping the themes hosted on GitHub.
+
+To add a theme, add it to `themes.yaml` (and its screenshot to `screenshots/`), then run
+`python3 tools/build_themes.py --check`.
+
 ## Where ES installs things
 
 Everything goes in the user's data directory, without root:

@@ -1,0 +1,715 @@
+{
+  "data": [
+    {
+      "theme": "A-starwars-theme",
+      "theme_url": "https://github.com/soaremicheledavid/ES-A-StarWars-Theme",
+      "author": "soaremicheledavid",
+      "last_update": "2024-03-04",
+      "up_to_date": 1,
+      "size": 34,
+      "screenshot": "screenshots/A-starwars-theme.jpg"
+    },
+    {
+      "theme": "A-touch-of-glass",
+      "theme_url": "https://github.com/Scotty-Retro/ES-Theme-A-Touch-of-Glass",
+      "author": "Scotty-Retro",
+      "last_update": "2023-04-30",
+      "up_to_date": 1,
+      "size": 2384,
+      "screenshot": "screenshots/A-touch-of-glass.jpg"
+    },
+    {
+      "theme": "AX-SlideMix",
+      "theme_url": "https://github.com/soaremicheledavid/ES-Theme-AX-SlideMix",
+      "author": "soaremicheledavid",
+      "last_update": "2024-03-07",
+      "up_to_date": 1,
+      "size": 69,
+      "screenshot": "screenshots/AX-SlideMix.jpg"
+    },
+    {
+      "theme": "AI-Hypertocera",
+      "theme_url": "https://github.com/TheMiniCakeTV/AI-HYPERTOCERA-THE-MINI-CAKE-TV",
+      "author": "TheMiniCakeTV",
+      "last_update": "2026-10-24",
+      "up_to_date": 1,
+      "size": 1056,
+      "screenshot": "screenshots/AI-Hypertocera.jpg"
+    },
+    {
+      "theme": "Alekfull-NX",
+      "theme_url": "https://github.com/fagnerpc/Alekfull-NX",
+      "author": "fagnerpc",
+      "last_update": "2023-01-18",
+      "up_to_date": 1,
+      "size": 183,
+      "screenshot": "screenshots/Alekfull-NX.jpg"
+    },
+    {
+      "theme": "Animatics-DX",
+      "theme_url": "https://github.com/Snapouille/es-theme-Animatics-DX",
+      "author": "Snapouille",
+      "last_update": "2026-11-04",
+      "up_to_date": 1,
+      "size": 877,
+      "screenshot": "screenshots/Animatics-DX.jpg"
+    },
+    {
+      "theme": "Animetaverse",
+      "theme_url": "https://github.com/riofriz/es-theme-animetaverse",
+      "author": "riofriz",
+      "last_update": "2026-08-09",
+      "up_to_date": 1,
+      "size": 49,
+      "screenshot": "screenshots/Animetaverse.jpg"
+    },
+    {
+      "theme": "Arcadeplanet",
+      "theme_url": "https://github.com/EvilDindon/ES-THEME-ARCADEPLANET",
+      "author": "EvilDindon",
+      "last_update": "2026-07-19",
+      "up_to_date": 1,
+      "size": 162,
+      "screenshot": "screenshots/Arcadeplanet.jpg"
+    },
+    {
+      "theme": "Art-Book-Next",
+      "theme_url": "https://github.com/anthonycaccese/art-book-next-es",
+      "author": "anthonycaccese",
+      "last_update": "2026-03-12",
+      "up_to_date": 1,
+      "size": 280,
+      "screenshot": "screenshots/Art-Book-Next.jpg"
+    },
+    {
+      "theme": "Artflix",
+      "theme_url": "https://github.com/fagnerpc/Alekfull-ARTFLIX",
+      "author": "fagnerpc",
+      "last_update": "2026-10-24",
+      "up_to_date": 1,
+      "size": 386,
+      "screenshot": "screenshots/Artflix.jpg"
+    },
+    {
+      "theme": "Artflix-Cobalto",
+      "theme_url": "https://github.com/galisteogames/ARTFLIX-Cobalto",
+      "author": "galisteogames",
+      "last_update": "2026-09-28",
+      "up_to_date": 1,
+      "size": 543,
+      "screenshot": "screenshots/Artflix-Cobalto.jpg"
+    },
+    {
+      "theme": "Atlas-es",
+      "theme_url": "https://github.com/mirko93s/atlas-es",
+      "author": "mirko93s",
+      "last_update": "2026-05-31",
+      "up_to_date": 1,
+      "size": 83,
+      "screenshot": "screenshots/Atlas-es.jpg"
+    },
+    {
+      "theme": "Batocera-Club-Reloaded",
+      "theme_url": "https://github.com/lehcimcramtrebor/es-theme-batocer-club-reloaded",
+      "author": "lehcimcramtrebor",
+      "last_update": "2025-02-28",
+      "up_to_date": 1,
+      "size": 881,
+      "screenshot": "screenshots/Batocera-Club-Reloaded.jpg"
+    },
+    {
+      "theme": "BatWiiCera",
+      "theme_url": "https://github.com/yiddifliddo/BatWiiCera-theme",
+      "author": "yiddifliddo",
+      "last_update": "2026-10-14",
+      "up_to_date": 1,
+      "size": 20,
+      "screenshot": "screenshots/BatWiiCera.jpg"
+    },
+    {
+      "theme": "BichromaticPads",
+      "theme_url": "https://github.com/DarrenCarol/Bichromatic-Pads",
+      "author": "DarrenCarol",
+      "last_update": "2021-09-22",
+      "up_to_date": 1,
+      "size": 7,
+      "screenshot": "screenshots/BichromaticPads.jpg"
+    },
+    {
+      "theme": "BrowBows-Heder",
+      "theme_url": "https://github.com/hedergim/es-theme-BrowBows-Heder",
+      "author": "hedergim",
+      "last_update": "2022-07-14",
+      "up_to_date": 1,
+      "size": 1762,
+      "screenshot": "screenshots/BrowBows-Heder.jpg"
+    },
+    {
+      "theme": "Canvas",
+      "theme_url": "https://github.com/Siddy212/canvas-es",
+      "author": "Siddy212",
+      "last_update": "2025-12-18",
+      "up_to_date": 1,
+      "size": 168,
+      "screenshot": "screenshots/Canvas.jpg"
+    },
+    {
+      "theme": "CarbonX",
+      "theme_url": "https://github.com/soaremicheledavid/ES-Theme-CarbonX",
+      "author": "soaremicheledavid",
+      "last_update": "2024-02-14",
+      "up_to_date": 1,
+      "size": 7,
+      "screenshot": "screenshots/CarbonX.jpg"
+    },
+    {
+      "theme": "Ckau-Book",
+      "theme_url": "https://github.com/CkauNui/ckau-book",
+      "author": "CkauNui",
+      "last_update": "2026-10-28",
+      "up_to_date": 1,
+      "size": 1057,
+      "screenshot": "screenshots/Ckau-Book.jpg"
+    },
+    {
+      "theme": "CleanUI",
+      "theme_url": "https://github.com/Kikk0s/CleanUi",
+      "author": "Kikk0s",
+      "last_update": "2024-08-14",
+      "up_to_date": 1,
+      "size": 815,
+      "screenshot": "screenshots/CleanUI.jpg"
+    },
+    {
+      "theme": "Colorful-Simplified",
+      "theme_url": "https://github.com/anthonycaccese/colorful-simplified-es",
+      "author": "anthonycaccese",
+      "last_update": "2024-03-19",
+      "up_to_date": 1,
+      "size": 32,
+      "screenshot": "screenshots/Colorful-Simplified.jpg"
+    },
+    {
+      "theme": "ComicScrap",
+      "theme_url": "https://github.com/lehcimcramtrebor/es-theme-comicscrap",
+      "author": "lehcimcramtrebor",
+      "last_update": "2025-02-28",
+      "up_to_date": 1,
+      "size": 298,
+      "screenshot": "screenshots/ComicScrap.jpg"
+    },
+    {
+      "theme": "ComicScrapV2",
+      "theme_url": "https://github.com/lehcimcramtrebor/es-theme-ComicScrapV2",
+      "author": "lehcimcramtrebor",
+      "last_update": "2025-02-28",
+      "up_to_date": 1,
+      "size": 207,
+      "screenshot": "screenshots/ComicScrapV2.jpg"
+    },
+    {
+      "theme": "DarkGames",
+      "theme_url": "https://github.com/GoldenGames320/es-theme-DarkGames",
+      "author": "GoldenGames320",
+      "last_update": "2026-11-03",
+      "up_to_date": 1,
+      "size": 731,
+      "screenshot": "screenshots/DarkGames.jpg"
+    },
+    {
+      "theme": "DynamicBox",
+      "theme_url": "https://github.com/JandersonJS/DynamicBox",
+      "author": "JandersonJS",
+      "last_update": "2026-10-17",
+      "up_to_date": 1,
+      "size": 590,
+      "screenshot": "screenshots/DynamicBox.jpg"
+    },
+    {
+      "theme": "EpicNoir",
+      "theme_url": "https://github.com/c64-dev/es-theme-epicnoir",
+      "author": "c64-dev",
+      "last_update": "2022-07-31",
+      "up_to_date": 1,
+      "size": 28,
+      "screenshot": "screenshots/EpicNoir.jpg"
+    },
+    {
+      "theme": "Es-theme-Reload",
+      "theme_url": "https://github.com/RobG66/es-theme-RELOAD-",
+      "author": "RobG66",
+      "last_update": "2025-12-19",
+      "up_to_date": 1,
+      "size": 1347,
+      "screenshot": "screenshots/Es-theme-Reload.jpg"
+    },
+    {
+      "theme": "Es-theme-RBHS",
+      "theme_url": "https://github.com/Rogerio848484/es-theme-RBHS",
+      "author": "Rogerio848484",
+      "last_update": "2022-10-13",
+      "up_to_date": 1,
+      "size": 2474,
+      "screenshot": "screenshots/Es-theme-RBHS.jpg"
+    },
+    {
+      "theme": "FakeXMB",
+      "theme_url": "https://github.com/JandersonJS/FakeXMB",
+      "author": "JandersonJS",
+      "last_update": "2025-12-21",
+      "up_to_date": 1,
+      "size": 480,
+      "screenshot": "screenshots/FakeXMB.jpg"
+    },
+    {
+      "theme": "Fanartstar",
+      "theme_url": "https://github.com/BobMoraneRetro/one4all4one-fanartstar-bobmorane",
+      "author": "BobMoraneRetro",
+      "last_update": "2026-11-01",
+      "up_to_date": 1,
+      "size": 1627,
+      "screenshot": "screenshots/Fanartstar.jpg"
+    },
+    {
+      "theme": "Forever",
+      "theme_url": "https://github.com/lehcimcramtrebor/es-theme-forever",
+      "author": "lehcimcramtrebor",
+      "last_update": "2025-02-28",
+      "up_to_date": 1,
+      "size": 161,
+      "screenshot": "screenshots/Forever.jpg"
+    },
+    {
+      "theme": "GPi-Next-Pixel",
+      "theme_url": "https://github.com/SamYStudiO/es-theme-next-pixel",
+      "author": "SamYStudiO",
+      "last_update": "2024-05-09",
+      "up_to_date": 1,
+      "size": 589,
+      "screenshot": "screenshots/GPi-Next-Pixel.jpg"
+    },
+    {
+      "theme": "GPi-Super-Retroboy",
+      "theme_url": "https://github.com/KALEL1981/es-theme-Super-Retroboy",
+      "author": "KALEL1981",
+      "last_update": "2021-11-11",
+      "up_to_date": 1,
+      "size": 2,
+      "screenshot": "screenshots/GPi-Super-Retroboy.jpg"
+    },
+    {
+      "theme": "Hexa",
+      "theme_url": "https://github.com/lehcimcramtrebor/es-theme-HEXA",
+      "author": "lehcimcramtrebor",
+      "last_update": "2025-02-28",
+      "up_to_date": 1,
+      "size": 598,
+      "screenshot": "screenshots/Hexa.jpg"
+    },
+    {
+      "theme": "Hexa-handheld",
+      "theme_url": "https://github.com/lehcimcramtrebor/es-theme-HEXA-HANDHELD",
+      "author": "lehcimcramtrebor",
+      "last_update": "2025-02-28",
+      "up_to_date": 1,
+      "size": 77,
+      "screenshot": "screenshots/Hexa-handheld.jpg"
+    },
+    {
+      "theme": "Hursty-ArcadeParadise",
+      "theme_url": "https://github.com/RetroHursty69/RetroBat-ArcadeParadise",
+      "author": "RetroHursty69",
+      "last_update": "2024-06-09",
+      "up_to_date": 1,
+      "size": 1130,
+      "screenshot": "screenshots/Hursty-ArcadeParadise.jpg"
+    },
+    {
+      "theme": "Hursty-ComicPop",
+      "theme_url": "https://github.com/RetroHursty69/RetroBat-ComicPop",
+      "author": "RetroHursty69",
+      "last_update": "2024-04-05",
+      "up_to_date": 1,
+      "size": 581,
+      "screenshot": "screenshots/Hursty-ComicPop.jpg"
+    },
+    {
+      "theme": "Hursty-CosmicRise",
+      "theme_url": "https://github.com/RetroHursty69/Retrobat-CosmicRiseRB",
+      "author": "RetroHursty69",
+      "last_update": "2022-10-03",
+      "up_to_date": 1,
+      "size": 491,
+      "screenshot": "screenshots/Hursty-CosmicRise.jpg"
+    },
+    {
+      "theme": "Hursty-Crescendo",
+      "theme_url": "https://github.com/RetroHursty69/Retrobat-Crescendo",
+      "author": "RetroHursty69",
+      "last_update": "2022-10-09",
+      "up_to_date": 1,
+      "size": 1714,
+      "screenshot": "screenshots/Hursty-Crescendo.jpg"
+    },
+    {
+      "theme": "Hursty-HeyChromey",
+      "theme_url": "https://github.com/RetroHursty69/Retrobat-HeyChromeyRB",
+      "author": "RetroHursty69",
+      "last_update": "2022-10-03",
+      "up_to_date": 1,
+      "size": 1198,
+      "screenshot": "screenshots/Hursty-HeyChromey.jpg"
+    },
+    {
+      "theme": "Hursty-Monochrome",
+      "theme_url": "https://github.com/RetroHursty69/Retrobat-Monochrome",
+      "author": "RetroHursty69",
+      "last_update": "2022-11-07",
+      "up_to_date": 1,
+      "size": 370,
+      "screenshot": "screenshots/Hursty-Monochrome.jpg"
+    },
+    {
+      "theme": "Hursty-SuperSweet",
+      "theme_url": "https://github.com/RetroHursty69/Retrobat-SuperSweetRB",
+      "author": "RetroHursty69",
+      "last_update": "2022-10-03",
+      "up_to_date": 1,
+      "size": 530,
+      "screenshot": "screenshots/Hursty-SuperSweet.jpg"
+    },
+    {
+      "theme": "Hursty-Uniflyered",
+      "theme_url": "https://github.com/RetroHursty69/Retrobat-UniflyeredRB",
+      "author": "RetroHursty69",
+      "last_update": "2022-10-03",
+      "up_to_date": 1,
+      "size": 839,
+      "screenshot": "screenshots/Hursty-Uniflyered.jpg"
+    },
+    {
+      "theme": "HUDGEM",
+      "theme_url": "https://github.com/lehcimcramtrebor/es-theme-HUDGEM",
+      "author": "lehcimcramtrebor",
+      "last_update": "2025-02-28",
+      "up_to_date": 1,
+      "size": 575,
+      "screenshot": "screenshots/HUDGEM.jpg"
+    },
+    {
+      "theme": "Hyperbat",
+      "theme_url": "https://github.com/BobMoraneRetro/one4all4one-hyperbat-bobmorane",
+      "author": "BobMoraneRetro",
+      "last_update": "2026-10-11",
+      "up_to_date": 1,
+      "size": 2494,
+      "screenshot": "screenshots/Hyperbat.jpg"
+    },
+    {
+      "theme": "Hypermax-Plus-PixN",
+      "theme_url": "https://github.com/PixelNostalgia/Hypermax-Plus-PixN",
+      "author": "PixelNostalgia",
+      "last_update": "2026-09-25",
+      "up_to_date": 1,
+      "size": 1580,
+      "screenshot": "screenshots/Hypermax-Plus-PixN.jpg"
+    },
+    {
+      "theme": "Iconic-ES",
+      "theme_url": "https://github.com/Delgan/iconic-es",
+      "author": "Delgan",
+      "last_update": "2026-08-22",
+      "up_to_date": 1,
+      "size": 83,
+      "screenshot": "screenshots/Iconic-ES.jpg"
+    },
+    {
+      "theme": "Immersive",
+      "theme_url": "https://github.com/DarrenCarol/Immersive",
+      "author": "DarrenCarol",
+      "last_update": "2021-09-22",
+      "up_to_date": 1,
+      "size": 4,
+      "screenshot": "screenshots/Immersive.jpg"
+    },
+    {
+      "theme": "Immersive-v2",
+      "theme_url": "https://github.com/DarrenCarol/ImmersiveV2",
+      "author": "DarrenCarol",
+      "last_update": "2026-10-26",
+      "up_to_date": 1,
+      "size": 4,
+      "screenshot": "screenshots/Immersive-v2.jpg"
+    },
+    {
+      "theme": "Knulli",
+      "theme_url": "https://github.com/symbuzzer/es-theme-knulli",
+      "author": "symbuzzer",
+      "last_update": "2026-10-24",
+      "up_to_date": 1,
+      "size": 23,
+      "screenshot": "screenshots/Knulli.jpg"
+    },
+    {
+      "theme": "Maximusbat",
+      "theme_url": "https://github.com/MIKCPU/Maximusbat-theme",
+      "author": "MIKCPU",
+      "last_update": "2026-10-22",
+      "up_to_date": 1,
+      "size": 2347,
+      "screenshot": "screenshots/Maximusbat.jpg"
+    },
+    {
+      "theme": "Meringue_Knulli",
+      "theme_url": "https://github.com/kthod861/Meringue_Knulli",
+      "author": "kthod861",
+      "last_update": "2026-05-12",
+      "up_to_date": 1,
+      "size": 207,
+      "screenshot": "screenshots/Meringue_Knulli.jpg"
+    },
+    {
+      "theme": "Minima",
+      "theme_url": "https://github.com/soaremicheledavid/ES-Theme-MINIMA",
+      "author": "soaremicheledavid",
+      "last_update": "2024-03-07",
+      "up_to_date": 1,
+      "size": 15,
+      "screenshot": "screenshots/Minima.jpg"
+    },
+    {
+      "theme": "Minimal",
+      "theme_url": "https://github.com/crcerror/es-theme-minimal",
+      "author": "crcerror",
+      "last_update": "2026-10-03",
+      "up_to_date": 1,
+      "size": 6,
+      "screenshot": "screenshots/Minimal.jpg"
+    },
+    {
+      "theme": "Neon-Blast",
+      "theme_url": "https://github.com/Scotty-Retro/Neon-BlastV1",
+      "author": "Scotty-Retro",
+      "last_update": "2023-08-10",
+      "up_to_date": 1,
+      "size": 8338,
+      "screenshot": "screenshots/Neon-Blast.jpg"
+    },
+    {
+      "theme": "NESiCAxLive",
+      "theme_url": "https://github.com/BobMoraneRetro/one4all4one-NESiCAxLive-bobmorane",
+      "author": "BobMoraneRetro",
+      "last_update": "2025-07-18",
+      "up_to_date": 1,
+      "size": 1315,
+      "screenshot": "screenshots/NESiCAxLive.jpg"
+    },
+    {
+      "theme": "Neutral",
+      "theme_url": "https://github.com/Mattersons/es-theme-neutral",
+      "author": "Mattersons",
+      "last_update": "2025-01-05",
+      "up_to_date": 1,
+      "size": 31,
+      "screenshot": "screenshots/Neutral.jpg"
+    },
+    {
+      "theme": "Next-Level-Remix",
+      "theme_url": "https://github.com/ordovice/es-theme-next-level-remix",
+      "author": "ordovice",
+      "last_update": "2021-06-23",
+      "up_to_date": 1,
+      "size": 347,
+      "screenshot": "screenshots/Next-Level-Remix.jpg"
+    },
+    {
+      "theme": "Nomado-DX",
+      "theme_url": "https://github.com/Snapouille/Nomado-DX",
+      "author": "Snapouille",
+      "last_update": "2026-06-13",
+      "up_to_date": 1,
+      "size": 294,
+      "screenshot": "screenshots/Nomado-DX.jpg"
+    },
+    {
+      "theme": "OmegaDrive",
+      "theme_url": "https://github.com/Arcanthur/OmegaDrive",
+      "author": "Arcanthur",
+      "last_update": "2022-08-23",
+      "up_to_date": 1,
+      "size": 125,
+      "screenshot": "screenshots/OmegaDrive.jpg"
+    },
+    {
+      "theme": "P-10-menu",
+      "theme_url": "https://github.com/anthonycaccese/p-10-menu-es",
+      "author": "anthonycaccese",
+      "last_update": "2024-11-30",
+      "up_to_date": 1,
+      "size": 1,
+      "screenshot": "screenshots/P-10-menu.jpg"
+    },
+    {
+      "theme": "Piboy-BT",
+      "theme_url": "https://github.com/Kikk0s/Piboy_BT",
+      "author": "Kikk0s",
+      "last_update": "2022-07-28",
+      "up_to_date": 1,
+      "size": 6,
+      "screenshot": "screenshots/Piboy-BT.jpg"
+    },
+    {
+      "theme": "PiStation-X",
+      "theme_url": "https://github.com/JandersonJS/es-theme-PiStation-X",
+      "author": "JandersonJS",
+      "last_update": "2025-11-08",
+      "up_to_date": 1,
+      "size": 441,
+      "screenshot": "screenshots/PiStation-X.jpg"
+    },
+    {
+      "theme": "Platform",
+      "theme_url": "https://github.com/lehcimcramtrebor/es-theme-platform",
+      "author": "lehcimcramtrebor",
+      "last_update": "2025-02-28",
+      "up_to_date": 1,
+      "size": 1095,
+      "screenshot": "screenshots/Platform.jpg"
+    },
+    {
+      "theme": "Playstation-X",
+      "theme_url": "https://github.com/pajarorrojo/es-theme-PlayStation-X",
+      "author": "pajarorrojo",
+      "last_update": "2026-09-08",
+      "up_to_date": 1,
+      "size": 921,
+      "screenshot": "screenshots/Playstation-X.jpg"
+    },
+    {
+      "theme": "Pulse",
+      "theme_url": "https://github.com/complicatiion/batocera_pulse_theme",
+      "author": "complicatiion",
+      "last_update": "2026-05-10",
+      "up_to_date": 1,
+      "size": 57,
+      "screenshot": "screenshots/Pulse.jpg"
+    },
+    {
+      "theme": "RCBX",
+      "theme_url": "https://github.com/lehcimcramtrebor/es-theme-RCBX",
+      "author": "lehcimcramtrebor",
+      "last_update": "2025-02-28",
+      "up_to_date": 1,
+      "size": 184,
+      "screenshot": "screenshots/RCBX.jpg"
+    },
+    {
+      "theme": "Retro-Lux",
+      "theme_url": "https://github.com/EvilDindon/ES-THEME-RETRO_LUX",
+      "author": "EvilDindon",
+      "last_update": "2026-08-22",
+      "up_to_date": 1,
+      "size": 165,
+      "screenshot": "screenshots/Retro-Lux.jpg"
+    },
+    {
+      "theme": "RetroFix",
+      "theme_url": "https://github.com/20GotoTen/es-theme-retrofix",
+      "author": "20GotoTen",
+      "last_update": "2025-10-13",
+      "up_to_date": 1,
+      "size": 82,
+      "screenshot": "screenshots/RetroFix.jpg"
+    },
+    {
+      "theme": "RetroFix-Mini",
+      "theme_url": "https://github.com/20GotoTen/es-theme-retrofix-mini",
+      "author": "20GotoTen",
+      "last_update": "2025-12-31",
+      "up_to_date": 1,
+      "size": 78,
+      "screenshot": "screenshots/RetroFix-Mini.jpg"
+    },
+    {
+      "theme": "Retrorama-CE",
+      "theme_url": "https://github.com/lipebello/es-theme-retrorama-ce",
+      "author": "lipebello",
+      "last_update": "2024-11-30",
+      "up_to_date": 1,
+      "size": 231,
+      "screenshot": "screenshots/Retrorama-CE.jpg"
+    },
+    {
+      "theme": "Riescade",
+      "theme_url": "https://github.com/marcoriesco/riescade_platform",
+      "author": "marcoriesco",
+      "last_update": "2025-04-09",
+      "up_to_date": 1,
+      "size": 361,
+      "screenshot": "screenshots/Riescade.jpg"
+    },
+    {
+      "theme": "RVGM",
+      "theme_url": "https://github.com/Darknior/RVGM-BT-Theme",
+      "author": "Darknior",
+      "last_update": "2025-05-02",
+      "up_to_date": 1,
+      "size": 238,
+      "screenshot": "screenshots/RVGM.jpg"
+    },
+    {
+      "theme": "Sheezie2Clean",
+      "theme_url": "https://github.com/Sheezie/Sheezie2Clean",
+      "author": "Sheezie",
+      "last_update": "2025-08-31",
+      "up_to_date": 1,
+      "size": 244,
+      "screenshot": "screenshots/Sheezie2Clean.jpg"
+    },
+    {
+      "theme": "SimpleLife",
+      "theme_url": "https://github.com/DarrenCarol/Simple_Life",
+      "author": "DarrenCarol",
+      "last_update": "2021-10-06",
+      "up_to_date": 1,
+      "size": 4,
+      "screenshot": "screenshots/SimpleLife.jpg"
+    },
+    {
+      "theme": "Techdweeb",
+      "theme_url": "https://github.com/anthonycaccese/techdweeb-es",
+      "author": "anthonycaccese",
+      "last_update": "2026-10-28",
+      "up_to_date": 1,
+      "size": 1,
+      "screenshot": "screenshots/Techdweeb.jpg"
+    },
+    {
+      "theme": "Theme-basic",
+      "theme_url": "https://github.com/lehcimcramtrebor/es-theme-basic",
+      "author": "lehcimcramtrebor",
+      "last_update": "2026-09-07",
+      "up_to_date": 1,
+      "size": 500,
+      "screenshot": "screenshots/Theme-basic.jpg"
+    },
+    {
+      "theme": "Tiled",
+      "theme_url": "https://github.com/GeekRhapsody/es-theme-tiled",
+      "author": "GeekRhapsody",
+      "last_update": "2026-05-27",
+      "up_to_date": 1,
+      "size": 93,
+      "screenshot": "screenshots/Tiled.jpg"
+    },
+    {
+      "theme": "Zmax",
+      "theme_url": "https://github.com/marcelobarpp/es-theme-zmax",
+      "author": "marcelobarpp",
+      "last_update": "2026-11-07",
+      "up_to_date": 1,
+      "size": 819,
+      "screenshot": "screenshots/Zmax.jpg"
+    }
+  ]
+}

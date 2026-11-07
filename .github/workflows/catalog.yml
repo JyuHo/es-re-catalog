@@ -25,6 +25,7 @@ jobs:
       - run: pip install pyyaml
       - run: python3 -m unittest discover tests
       - run: python3 tools/build_catalog.py --check
+      - run: python3 tools/build_themes.py --check
 
   build:
     # Only main publishes a catalog; pull requests are checked above.
@@ -41,14 +42,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 tools/build_catalog.py
-      - name: Commit catalog.json
+      - name: Build themes.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/build_themes.py
+      - name: Commit catalog.json and themes.json
         run: |
-          if git diff --quiet -- catalog.json && git ls-files --error-unmatch catalog.json >/dev/null 2>&1; then
-            echo "catalog.json unchanged"
+          git add catalog.json themes.json
+          if git diff --cached --quiet; then
+            echo "catalog.json and themes.json unchanged"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add catalog.json
-          git commit -m "Update catalog.json"
+          git commit -m "Update catalog.json and themes.json"
           git push

@@ -1,0 +1,37 @@
+name: import Batocera themes
+
+# Run by hand: rewrites themes.yaml and screenshots/ from Batocera's theme list, builds
+# themes.json and commits the three on the branch it runs on. Review the result in a pull
+# request before it reaches main.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: python3 tools/build_themes.py --import-batocera
+      - name: Build themes.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/build_themes.py
+      - run: python3 tools/build_themes.py --check
+      - name: Commit
+        run: |
+          git add themes.yaml themes.json screenshots
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Import the theme list from Batocera"
+          git push

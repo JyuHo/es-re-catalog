@@ -132,7 +132,6 @@ def import_batocera(listing: dict[str, Any], base_url: str, get: Callable[[str],
         if item.get("author"):
             theme["author"] = str(item["author"])
         size = str(item.get("size", "")).strip()
-        print(f"debug: {name}: size={item.get('size')!r} keys={sorted(item)}") if len(seen) <= 3 else None
         if size.isdigit() and int(size) > 0:
             theme["size"] = int(size)
 

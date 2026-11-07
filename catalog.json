@@ -61,7 +61,8 @@
             "size": 88969472
           }
         ]
-      }
+      },
+      "logo": "logos/duckstation.png"
     },
     {
       "id": "pcsx2",
@@ -342,7 +343,8 @@
             "size": 63596174
           }
         ]
-      }
+      },
+      "logo": "logos/eden.png"
     },
     {
       "id": "xemu",
@@ -404,7 +406,8 @@
             "size": 27724280
           }
         ]
-      }
+      },
+      "logo": "logos/xenia-edge.png"
     },
     {
       "id": "flycast",

@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-11-08T14:29:56Z",
+  "generated": "2026-11-08T15:23:01Z",
   "standalone": [
     {
       "id": "retroarch",
@@ -609,6 +609,74 @@
           }
         ]
       }
+    },
+    {
+      "id": "vice",
+      "name": "VICE",
+      "systems": [
+        "c64",
+        "c128",
+        "c20",
+        "cplus4",
+        "pet"
+      ],
+      "description": "Commodore 64, 128, VIC-20, Plus/4 and PET emulator.",
+      "homepage": "https://vice-emu.sourceforge.io",
+      "binaries": [
+        "x64sc",
+        "x64"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "flatpak",
+            "ref": "net.sf.VICE",
+            "remote": "flathub"
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "flatpak",
+            "ref": "net.sf.VICE",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.sf.VICE.png"
+    },
+    {
+      "id": "openmsx",
+      "name": "openMSX",
+      "systems": [
+        "msx1",
+        "msx2",
+        "msx2+",
+        "msxturbor",
+        "colecovision",
+        "spectravideo"
+      ],
+      "description": "MSX, ColecoVision and Spectravideo emulator. Needs the system ROMs in the BIOS folder (Machines/ or openmsx/).",
+      "homepage": "https://openmsx.org",
+      "binaries": [
+        "openmsx"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "flatpak",
+            "ref": "org.openmsx.openMSX",
+            "remote": "flathub"
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "flatpak",
+            "ref": "org.openmsx.openMSX",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.openmsx.openMSX.png"
     }
   ],
   "cores": {
@@ -1515,6 +1583,82 @@
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/vice_x64sc_libretro.so.zip",
             "version": "2026-11-07",
             "crc32": "c5e097e6"
+          }
+        }
+      },
+      {
+        "id": "vice_x128",
+        "name": "VICE x128",
+        "systems": [
+          "c128"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_x128_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "35319acd"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/vice_x128_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "48ec190e"
+          }
+        }
+      },
+      {
+        "id": "vice_xvic",
+        "name": "VICE xvic",
+        "systems": [
+          "c20"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_xvic_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "30a83b47"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/vice_xvic_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "ceff4bd8"
+          }
+        }
+      },
+      {
+        "id": "vice_xplus4",
+        "name": "VICE xplus4",
+        "systems": [
+          "cplus4"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_xplus4_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "42d56377"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/vice_xplus4_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "afd4e1df"
+          }
+        }
+      },
+      {
+        "id": "vice_xpet",
+        "name": "VICE xpet",
+        "systems": [
+          "pet"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_xpet_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "8374d8e5"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/vice_xpet_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "7ae6b459"
           }
         }
       },

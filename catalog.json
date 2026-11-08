@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-11-08T11:15:24Z",
+  "generated": "2026-11-08T13:18:59Z",
   "standalone": [
     {
       "id": "retroarch",
@@ -109,10 +109,10 @@
         "x86_64": [
           {
             "type": "appimage",
-            "url": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-13a3cd4266158911a8c555dda59005bc20fd2a66/rpcs3-v0.0.43-20570-13a3cd42_linux64.AppImage",
-            "version": "build-13a3cd4266158911a8c555dda59005bc20fd2a66",
-            "sha256": "41a888e275db309b53bebfe40c7042b233bf1f327f8c186a104c88b505d241d2",
-            "size": 83113295
+            "url": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-e61d5eaf0f7135e578a5280b2bb2bd5c8a1c439f/rpcs3-v0.0.43-20572-e61d5eaf_linux64.AppImage",
+            "version": "build-e61d5eaf0f7135e578a5280b2bb2bd5c8a1c439f",
+            "sha256": "c34a9e553846842c2be073bfa4980c2fec587362ad022c100b8391ca66847fc8",
+            "size": 83091968
           },
           {
             "type": "flatpak",
@@ -400,10 +400,10 @@
         "x86_64": [
           {
             "type": "appimage",
-            "url": "https://github.com/has207/xenia-edge/releases/download/61e743b/xenia_edge_linux.AppImage",
-            "version": "61e743b",
-            "sha256": "35b51fceacb9a5e99aa97463a7ab542ae801d4fffcc6c0f3c0079cc599431b8b",
-            "size": 27716088
+            "url": "https://github.com/has207/xenia-edge/releases/download/3c0f1d3/xenia_edge_linux.AppImage",
+            "version": "3c0f1d3",
+            "sha256": "351bf908849a6052251b48a7c104b2fd11d662e082f31161221d0f204dd0ed15",
+            "size": 27720184
           }
         ]
       },
@@ -799,6 +799,63 @@
         }
       },
       {
+        "id": "melonds",
+        "name": "melonDS (legacy core)",
+        "systems": [
+          "nds"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/melonds_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "458dc613"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/melonds_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "a694c81b"
+          }
+        }
+      },
+      {
+        "id": "mednafen_vb",
+        "name": "Beetle VB",
+        "systems": [
+          "virtualboy"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_vb_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "22fae315"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mednafen_vb_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "baa7d947"
+          }
+        }
+      },
+      {
+        "id": "pokemini",
+        "name": "PokeMini",
+        "systems": [
+          "pokemini"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/pokemini_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "5efb7f3a"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/pokemini_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "980efd61"
+          }
+        }
+      },
+      {
         "id": "genesis_plus_gx",
         "name": "Genesis Plus GX",
         "systems": [
@@ -907,12 +964,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/fbneo_libretro.so.zip",
-            "version": "2026-11-07",
-            "crc32": "50214d31"
+            "version": "2026-11-08",
+            "crc32": "2909f543"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/fbneo_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-08",
             "crc32": "6894991e"
           }
         }

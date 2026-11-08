@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-11-07T21:31:18Z",
+  "generated": "2026-11-08T11:15:24Z",
   "standalone": [
     {
       "id": "retroarch",
@@ -123,10 +123,10 @@
         "aarch64": [
           {
             "type": "appimage",
-            "url": "https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-13a3cd4266158911a8c555dda59005bc20fd2a66/rpcs3-v0.0.43-20570-13a3cd42_linux_aarch64.AppImage",
-            "version": "build-13a3cd4266158911a8c555dda59005bc20fd2a66",
-            "sha256": "37c3c3cdd8f3fe8d01f07582d858675d4aa8343555db1941260db035770cb278",
-            "size": 79054547
+            "url": "https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-e61d5eaf0f7135e578a5280b2bb2bd5c8a1c439f/rpcs3-v0.0.43-20572-e61d5eaf_linux_aarch64.AppImage",
+            "version": "build-e61d5eaf0f7135e578a5280b2bb2bd5c8a1c439f",
+            "sha256": "dfd60efa6e71bcbd2d76829983961e366cebd3baffd27413e211f18291aa2488",
+            "size": 79054679
           }
         ]
       },
@@ -400,10 +400,10 @@
         "x86_64": [
           {
             "type": "appimage",
-            "url": "https://github.com/has207/xenia-edge/releases/download/ae42460/xenia_edge_linux.AppImage",
-            "version": "ae42460",
-            "sha256": "d97da4af17adb76d4822f5896515077a771ba099818c9748cc0ab45963cf706a",
-            "size": 27720184
+            "url": "https://github.com/has207/xenia-edge/releases/download/61e743b/xenia_edge_linux.AppImage",
+            "version": "61e743b",
+            "sha256": "35b51fceacb9a5e99aa97463a7ab542ae801d4fffcc6c0f3c0079cc599431b8b",
+            "size": 27716088
           }
         ]
       },
@@ -927,7 +927,7 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mame_libretro.so.zip",
-            "version": "2026-10-16",
+            "version": "2026-11-07",
             "crc32": "562576a2"
           }
         }

@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-11-08T14:13:40Z",
+  "generated": "2026-11-08T14:29:56Z",
   "standalone": [
     {
       "id": "retroarch",
@@ -400,9 +400,9 @@
         "x86_64": [
           {
             "type": "appimage",
-            "url": "https://github.com/has207/xenia-edge/releases/download/3c0f1d3/xenia_edge_linux.AppImage",
-            "version": "3c0f1d3",
-            "sha256": "351bf908849a6052251b48a7c104b2fd11d662e082f31161221d0f204dd0ed15",
+            "url": "https://github.com/has207/xenia-edge/releases/download/9906014/xenia_edge_linux.AppImage",
+            "version": "9906014",
+            "sha256": "ef9292111a8b6d36ecc2a43b9f4a4d8c4ed31f5b340bcc6339ad3347f48fb154",
             "size": 27720184
           }
         ]
@@ -498,6 +498,117 @@
         ]
       },
       "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.scummvm.ScummVM.png"
+    },
+    {
+      "id": "hatari",
+      "name": "Hatari",
+      "systems": [
+        "atarist"
+      ],
+      "description": "Atari ST, STE, TT and Falcon emulator. Needs a TOS (or EmuTOS) in the BIOS folder.",
+      "homepage": "https://www.hatari-emu.org",
+      "binaries": [
+        "hatari"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "flatpak",
+            "ref": "org.tuxfamily.hatari",
+            "remote": "flathub"
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "flatpak",
+            "ref": "org.tuxfamily.hatari",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.tuxfamily.hatari.png"
+    },
+    {
+      "id": "vita3k",
+      "name": "Vita3K",
+      "systems": [
+        "psvita"
+      ],
+      "description": "PlayStation Vita emulator. Experimental.",
+      "homepage": "https://vita3k.org",
+      "binaries": [
+        "Vita3K",
+        "vita3k"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/Vita3K-x86_64.AppImage",
+            "version": "continuous-2026-11-08",
+            "sha256": "757d5027104467ae439b00a78277aea0b5ed6a85185a518532acd68c77e09df4",
+            "size": 89923880
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/Vita3K-aarch64.AppImage",
+            "version": "continuous-2026-11-08",
+            "sha256": "94cd273715c534b1cd59efb834d7588f209f565b07e4df02a659d5da3be90e1a",
+            "size": 88464485
+          }
+        ]
+      }
+    },
+    {
+      "id": "shadps4",
+      "name": "shadPS4",
+      "systems": [
+        "ps4"
+      ],
+      "description": "PlayStation 4 emulator. Experimental, needs Vulkan.",
+      "homepage": "https://shadps4.net",
+      "binaries": [
+        "shadps4"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "archive",
+            "url": "https://github.com/shadps4-emu/shadPS4/releases/download/v.0.21.0/shadps4-linux-sdl-0.21.0.zip",
+            "version": "v.0.21.0",
+            "exec": "\\.AppImage$",
+            "sha256": "7c41c58254461d742b5edf564e23795697b63e9e46de11d0e1ed67bd2cbaae68",
+            "size": 33362189
+          }
+        ]
+      }
+    },
+    {
+      "id": "redream",
+      "name": "Redream",
+      "systems": [
+        "dreamcast"
+      ],
+      "description": "Dreamcast emulator. Free; higher resolutions need a premium key (redream.key).",
+      "homepage": "https://redream.io",
+      "binaries": [
+        "redream"
+      ],
+      "license": "Proprietary",
+      "builds": {
+        "x86_64": [
+          {
+            "type": "archive",
+            "url": "https://redream.io/download/redream.x86_64-linux-v1.5.0.tar.gz",
+            "version": "1.5.0",
+            "exec": "^redream$",
+            "sha256": "6f1eec9e4bab7411dbee08192a2ae6c133a2ae08af98b25afab4d61060fc0466",
+            "size": 2060263
+          }
+        ]
+      }
     }
   ],
   "cores": {
@@ -1328,6 +1439,44 @@
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/puae_libretro.so.zip",
             "version": "2026-11-07",
             "crc32": "c4b30629"
+          }
+        }
+      },
+      {
+        "id": "hatari",
+        "name": "Hatari",
+        "systems": [
+          "atarist"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/hatari_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "2b7d2faa"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/hatari_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "3f9c2ffa"
+          }
+        }
+      },
+      {
+        "id": "hatarib",
+        "name": "hatariB",
+        "systems": [
+          "atarist"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/hatarib_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "d34c91ef"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/hatarib_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "07baffa1"
           }
         }
       },

@@ -247,6 +247,30 @@ standalone:
       x86_64:
         - { type: archive, url: 'https://redream.io/download/redream.x86_64-linux-v1.5.0.tar.gz', version: '1.5.0', exec: '^redream$' }
 
+  - id: vice
+    name: VICE
+    description: Commodore 64, 128, VIC-20, Plus/4 and PET emulator.
+    systems: [c64, c128, c20, cplus4, pet]
+    homepage: https://vice-emu.sourceforge.io
+    binaries: [x64sc, x64]
+    builds:
+      x86_64:
+        - { type: flatpak, ref: net.sf.VICE }
+      aarch64:
+        - { type: flatpak, ref: net.sf.VICE }
+
+  - id: openmsx
+    name: openMSX
+    description: MSX, ColecoVision and Spectravideo emulator. Needs the system ROMs in the BIOS folder (Machines/ or openmsx/).
+    systems: [msx1, msx2, msx2+, msxturbor, colecovision, spectravideo]
+    homepage: https://openmsx.org
+    binaries: [openmsx]
+    builds:
+      x86_64:
+        - { type: flatpak, ref: org.openmsx.openMSX }
+      aarch64:
+        - { type: flatpak, ref: org.openmsx.openMSX }
+
 cores:
   # The eight default cores of es-launcher
   - { id: gambatte, name: Gambatte, systems: [gb, gbc] }
@@ -298,6 +322,10 @@ cores:
   - { id: hatarib, name: hatariB, systems: [atarist] }
   - { id: vice_x64, name: VICE x64, systems: [c64] }
   - { id: vice_x64sc, name: VICE x64sc, systems: [c64] }
+  - { id: vice_x128, name: VICE x128, systems: [c128] }
+  - { id: vice_xvic, name: VICE xvic, systems: [c20] }
+  - { id: vice_xplus4, name: VICE xplus4, systems: [cplus4] }
+  - { id: vice_xpet, name: VICE xpet, systems: [pet] }
   - { id: dosbox_pure, name: DOSBox Pure, systems: [dos] }
   - { id: scummvm, name: ScummVM, systems: [scummvm] }
   - { id: opera, name: Opera, systems: [3do] }

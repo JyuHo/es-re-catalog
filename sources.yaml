@@ -178,6 +178,30 @@ standalone:
         - { type: appimage, repo: flyinghead/flycast, asset: '^flycast-x86_64-[0-9.]+\.AppImage$' }
         - { type: flatpak, ref: org.flycast.Flycast }
 
+  - id: dosbox_staging
+    name: DOSBox Staging
+    description: DOS emulator.
+    systems: [dos]
+    homepage: https://www.dosbox-staging.org
+    binaries: [dosbox-staging, dosbox]
+    builds:
+      x86_64:
+        - { type: flatpak, ref: io.github.dosbox-staging }
+      aarch64:
+        - { type: flatpak, ref: io.github.dosbox-staging }
+
+  - id: scummvm
+    name: ScummVM
+    description: Point-and-click adventure game engines.
+    systems: [scummvm]
+    homepage: https://www.scummvm.org
+    binaries: [scummvm]
+    builds:
+      x86_64:
+        - { type: flatpak, ref: org.scummvm.ScummVM }
+      aarch64:
+        - { type: flatpak, ref: org.scummvm.ScummVM }
+
 cores:
   # The eight default cores of es-launcher
   - { id: gambatte, name: Gambatte, systems: [gb, gbc] }
@@ -224,8 +248,9 @@ cores:
   - { id: mednafen_ngp, name: Beetle NeoPop, systems: [ngp, ngpc] }
   - { id: mednafen_wswan, name: Beetle WonderSwan, systems: [wswan, wswanc] }
   - { id: bluemsx, name: blueMSX, systems: [msx1, msx2, colecovision] }
-  - { id: puae, name: PUAE, systems: [amiga500, amiga1200, amigacd32] }
+  - { id: puae, name: PUAE, systems: [amiga500, amiga1200, amigacd32, amigacdtv] }
   - { id: vice_x64, name: VICE x64, systems: [c64] }
+  - { id: vice_x64sc, name: VICE x64sc, systems: [c64] }
   - { id: dosbox_pure, name: DOSBox Pure, systems: [dos] }
   - { id: scummvm, name: ScummVM, systems: [scummvm] }
   - { id: opera, name: Opera, systems: [3do] }

@@ -218,6 +218,9 @@ cores:
   - { id: mame2003_plus, name: MAME 2003-Plus, systems: [mame, arcade] }
   - { id: stella, name: Stella, systems: [atari2600] }
   - { id: handy, name: Handy, systems: [lynx] }
+  - { id: virtualjaguar, name: Virtual Jaguar, systems: [jaguar] }
+  - { id: atari800, name: Atari800, systems: [atari800, atari5200] }
+  - { id: prosystem, name: ProSystem, systems: [atari7800] }
   - { id: mednafen_ngp, name: Beetle NeoPop, systems: [ngp, ngpc] }
   - { id: mednafen_wswan, name: Beetle WonderSwan, systems: [wswan, wswanc] }
   - { id: bluemsx, name: blueMSX, systems: [msx1, msx2, colecovision] }

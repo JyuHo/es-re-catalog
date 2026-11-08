@@ -206,6 +206,8 @@ cores:
   - { id: genesis_plus_gx, name: Genesis Plus GX, systems: [megadrive, mastersystem, gamegear, segacd, sg1000] }
   - { id: picodrive, name: PicoDrive, systems: [megadrive, mastersystem, sega32x, segacd] }
   - { id: mednafen_pce_fast, name: Beetle PCE Fast, systems: [pcengine, pcenginecd] }
+  - { id: mednafen_pce, name: Beetle PCE, systems: [pcengine, pcenginecd, supergrafx] }
+  - { id: mednafen_supergrafx, name: Beetle SuperGrafx, systems: [supergrafx, pcengine, pcenginecd] }
   - { id: mednafen_saturn, name: Beetle Saturn, systems: [saturn], arch: [x86_64] }
   - { id: yabasanshiro, name: YabaSanshiro, systems: [saturn] }
   - { id: kronos, name: Kronos, systems: [saturn], arch: [x86_64] }

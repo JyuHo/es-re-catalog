@@ -202,6 +202,51 @@ standalone:
       aarch64:
         - { type: flatpak, ref: org.scummvm.ScummVM }
 
+  - id: hatari
+    name: Hatari
+    description: Atari ST, STE, TT and Falcon emulator. Needs a TOS (or EmuTOS) in the BIOS folder.
+    systems: [atarist]
+    homepage: https://www.hatari-emu.org
+    binaries: [hatari]
+    builds:
+      x86_64:
+        - { type: flatpak, ref: org.tuxfamily.hatari }
+      aarch64:
+        - { type: flatpak, ref: org.tuxfamily.hatari }
+
+  - id: vita3k
+    name: Vita3K
+    description: PlayStation Vita emulator. Experimental.
+    systems: [psvita]
+    homepage: https://vita3k.org
+    binaries: [Vita3K, vita3k]
+    builds:
+      x86_64:
+        - { type: appimage, repo: Vita3K/Vita3K, asset: '^Vita3K-x86_64\.AppImage$', rolling: true }
+      aarch64:
+        - { type: appimage, repo: Vita3K/Vita3K, asset: '^Vita3K-aarch64\.AppImage$', rolling: true }
+
+  - id: shadps4
+    name: shadPS4
+    description: PlayStation 4 emulator. Experimental, needs Vulkan.
+    systems: [ps4]
+    homepage: https://shadps4.net
+    binaries: [shadps4]
+    builds:
+      x86_64:
+        - { type: archive, repo: shadps4-emu/shadPS4, asset: '^shadps4-linux-sdl-.*\.zip$', exec: '\.AppImage$' }
+
+  - id: redream
+    name: Redream
+    description: Dreamcast emulator. Free; higher resolutions need a premium key (redream.key).
+    systems: [dreamcast]
+    homepage: https://redream.io
+    license: Proprietary
+    binaries: [redream]
+    builds:
+      x86_64:
+        - { type: archive, url: 'https://redream.io/download/redream.x86_64-linux-v1.5.0.tar.gz', version: '1.5.0', exec: '^redream$' }
+
 cores:
   # The eight default cores of es-launcher
   - { id: gambatte, name: Gambatte, systems: [gb, gbc] }
@@ -249,6 +294,8 @@ cores:
   - { id: mednafen_wswan, name: Beetle WonderSwan, systems: [wswan, wswanc] }
   - { id: bluemsx, name: blueMSX, systems: [msx1, msx2, colecovision] }
   - { id: puae, name: PUAE, systems: [amiga500, amiga1200, amigacd32, amigacdtv] }
+  - { id: hatari, name: Hatari, systems: [atarist] }
+  - { id: hatarib, name: hatariB, systems: [atarist] }
   - { id: vice_x64, name: VICE x64, systems: [c64] }
   - { id: vice_x64sc, name: VICE x64sc, systems: [c64] }
   - { id: dosbox_pure, name: DOSBox Pure, systems: [dos] }

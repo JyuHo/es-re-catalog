@@ -200,6 +200,9 @@ cores:
   - { id: desmume, name: DeSmuME, systems: [nds] }
   - { id: bsnes, name: bsnes, systems: [snes], arch: [x86_64] }
   - { id: parallel_n64, name: ParaLLEl N64, systems: [n64] }
+  - { id: melonds, name: melonDS (legacy core), systems: [nds] }
+  - { id: mednafen_vb, name: Beetle VB, systems: [virtualboy] }
+  - { id: pokemini, name: PokeMini, systems: [pokemini] }
   - { id: genesis_plus_gx, name: Genesis Plus GX, systems: [megadrive, mastersystem, gamegear, segacd, sg1000] }
   - { id: picodrive, name: PicoDrive, systems: [megadrive, mastersystem, sega32x, segacd] }
   - { id: mednafen_pce_fast, name: Beetle PCE Fast, systems: [pcengine, pcenginecd] }

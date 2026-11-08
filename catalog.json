@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-11-08T13:38:47Z",
+  "generated": "2026-11-08T13:50:08Z",
   "standalone": [
     {
       "id": "retroarch",
@@ -1023,6 +1023,7 @@
         "systems": [
           "fbneo",
           "neogeo",
+          "neogeocd",
           "arcade"
         ],
         "builds": {
@@ -1035,6 +1036,25 @@
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/fbneo_libretro.so.zip",
             "version": "2026-11-08",
             "crc32": "6894991e"
+          }
+        }
+      },
+      {
+        "id": "neocd",
+        "name": "NeoCD",
+        "systems": [
+          "neogeocd"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/neocd_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "85991a59"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/neocd_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "6a4baf84"
           }
         }
       },

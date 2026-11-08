@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-11-08T14:07:30Z",
+  "generated": "2026-11-08T14:13:40Z",
   "standalone": [
     {
       "id": "retroarch",
@@ -439,6 +439,65 @@
         ]
       },
       "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.flycast.Flycast.png"
+    },
+    {
+      "id": "dosbox_staging",
+      "name": "DOSBox Staging",
+      "systems": [
+        "dos"
+      ],
+      "description": "DOS emulator.",
+      "homepage": "https://www.dosbox-staging.org",
+      "binaries": [
+        "dosbox-staging",
+        "dosbox"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "flatpak",
+            "ref": "io.github.dosbox-staging",
+            "remote": "flathub"
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "flatpak",
+            "ref": "io.github.dosbox-staging",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/io.github.dosbox-staging.png"
+    },
+    {
+      "id": "scummvm",
+      "name": "ScummVM",
+      "systems": [
+        "scummvm"
+      ],
+      "description": "Point-and-click adventure game engines.",
+      "homepage": "https://www.scummvm.org",
+      "binaries": [
+        "scummvm"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "flatpak",
+            "ref": "org.scummvm.ScummVM",
+            "remote": "flathub"
+          }
+        ],
+        "aarch64": [
+          {
+            "type": "flatpak",
+            "ref": "org.scummvm.ScummVM",
+            "remote": "flathub"
+          }
+        ]
+      },
+      "logo": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.scummvm.ScummVM.png"
     }
   ],
   "cores": {
@@ -1256,7 +1315,8 @@
         "systems": [
           "amiga500",
           "amiga1200",
-          "amigacd32"
+          "amigacd32",
+          "amigacdtv"
         ],
         "builds": {
           "x86_64": {
@@ -1287,6 +1347,25 @@
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/vice_x64_libretro.so.zip",
             "version": "2026-11-07",
             "crc32": "532bab8f"
+          }
+        }
+      },
+      {
+        "id": "vice_x64sc",
+        "name": "VICE x64sc",
+        "systems": [
+          "c64"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_x64sc_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "935c004d"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/vice_x64sc_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "c5e097e6"
           }
         }
       },

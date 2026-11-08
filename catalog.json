@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-11-08T13:18:59Z",
+  "generated": "2026-11-08T13:38:47Z",
   "standalone": [
     {
       "id": "retroarch",
@@ -921,6 +921,48 @@
         }
       },
       {
+        "id": "mednafen_pce",
+        "name": "Beetle PCE",
+        "systems": [
+          "pcengine",
+          "pcenginecd",
+          "supergrafx"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_pce_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "91c608a6"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mednafen_pce_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "3cfa9b51"
+          }
+        }
+      },
+      {
+        "id": "mednafen_supergrafx",
+        "name": "Beetle SuperGrafx",
+        "systems": [
+          "supergrafx",
+          "pcengine",
+          "pcenginecd"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_supergrafx_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "521e6850"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mednafen_supergrafx_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "16647efd"
+          }
+        }
+      },
+      {
         "id": "mednafen_saturn",
         "name": "Beetle Saturn",
         "systems": [
@@ -952,6 +994,28 @@
             "crc32": "f4cc209c"
           }
         }
+      },
+      {
+        "id": "kronos",
+        "name": "Kronos",
+        "systems": [
+          "saturn"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/kronos_libretro.so.zip",
+            "version": "2026-11-08",
+            "crc32": "1f2dfc77"
+          }
+        }
+      },
+      {
+        "id": "genesis_plus_gx_expanded",
+        "name": "Genesis Plus GX Expanded",
+        "systems": [
+          "megadrive"
+        ],
+        "builds": {}
       },
       {
         "id": "fbneo",

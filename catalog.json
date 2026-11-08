@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-11-08T13:50:08Z",
+  "generated": "2026-11-08T14:07:30Z",
   "standalone": [
     {
       "id": "retroarch",
@@ -1128,6 +1128,64 @@
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/handy_libretro.so.zip",
             "version": "2026-11-07",
             "crc32": "d6623bbc"
+          }
+        }
+      },
+      {
+        "id": "virtualjaguar",
+        "name": "Virtual Jaguar",
+        "systems": [
+          "jaguar"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/virtualjaguar_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "b24f08c4"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/virtualjaguar_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "5999bc2f"
+          }
+        }
+      },
+      {
+        "id": "atari800",
+        "name": "Atari800",
+        "systems": [
+          "atari800",
+          "atari5200"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/atari800_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "ee43a2fd"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/atari800_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "ea04e98c"
+          }
+        }
+      },
+      {
+        "id": "prosystem",
+        "name": "ProSystem",
+        "systems": [
+          "atari7800"
+        ],
+        "builds": {
+          "x86_64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/prosystem_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "b5c4d2a3"
+          },
+          "aarch64": {
+            "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/prosystem_libretro.so.zip",
+            "version": "2026-11-07",
+            "crc32": "fe478c6c"
           }
         }
       },

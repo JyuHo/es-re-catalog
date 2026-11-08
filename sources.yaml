@@ -208,6 +208,8 @@ cores:
   - { id: mednafen_pce_fast, name: Beetle PCE Fast, systems: [pcengine, pcenginecd] }
   - { id: mednafen_saturn, name: Beetle Saturn, systems: [saturn], arch: [x86_64] }
   - { id: yabasanshiro, name: YabaSanshiro, systems: [saturn] }
+  - { id: kronos, name: Kronos, systems: [saturn], arch: [x86_64] }
+  - { id: genesis_plus_gx_expanded, name: Genesis Plus GX Expanded, systems: [megadrive] }
   - { id: fbneo, name: FinalBurn Neo, systems: [fbneo, neogeo, arcade] }
   - { id: mame, name: MAME, systems: [mame, arcade], arch: [x86_64] }
   - { id: mame2003_plus, name: MAME 2003-Plus, systems: [mame, arcade] }

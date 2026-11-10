@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "generated": "2026-11-09T12:50:15Z",
+  "generated": "2026-11-10T12:37:07Z",
   "standalone": [
     {
       "id": "retroarch",
@@ -109,10 +109,10 @@
         "x86_64": [
           {
             "type": "appimage",
-            "url": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-47599599a4cea37f350eb0936d7c5e4de6f7bf57/rpcs3-v0.0.43-20573-47599599_linux64.AppImage",
-            "version": "build-47599599a4cea37f350eb0936d7c5e4de6f7bf57",
-            "sha256": "6061639a8549014ad10ca1bfba87ed7330a395ed68e6afd98d8a36cf31673a61",
-            "size": 83090402
+            "url": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-fd027c99b8824e9a9b6f5b2d5ae33f9202e29da3/rpcs3-v0.0.43-20581-fd027c99_linux64.AppImage",
+            "version": "build-fd027c99b8824e9a9b6f5b2d5ae33f9202e29da3",
+            "sha256": "82433a3bf4a0ac2236a0884989db3901cb6e7981d7cfdf071b195047ac1ec157",
+            "size": 83116763
           },
           {
             "type": "flatpak",
@@ -123,10 +123,10 @@
         "aarch64": [
           {
             "type": "appimage",
-            "url": "https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-47599599a4cea37f350eb0936d7c5e4de6f7bf57/rpcs3-v0.0.43-20573-47599599_linux_aarch64.AppImage",
-            "version": "build-47599599a4cea37f350eb0936d7c5e4de6f7bf57",
-            "sha256": "20bdaad2dda9fd5c2f1cfb4c21e482cdb4f296d968cf1930db05d862caeb5dbe",
-            "size": 79057453
+            "url": "https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-fd027c99b8824e9a9b6f5b2d5ae33f9202e29da3/rpcs3-v0.0.43-20581-fd027c99_linux_aarch64.AppImage",
+            "version": "build-fd027c99b8824e9a9b6f5b2d5ae33f9202e29da3",
+            "sha256": "2e9d50d38797bec8c97f7d0aa8ac68cd7a8f82dc0e7964945ff3b04f549b2915",
+            "size": 79075469
           }
         ]
       },
@@ -400,10 +400,10 @@
         "x86_64": [
           {
             "type": "appimage",
-            "url": "https://github.com/has207/xenia-edge/releases/download/c519cb4/xenia_edge_linux.AppImage",
-            "version": "c519cb4",
-            "sha256": "233fd46e5559e65d91458778ae617791f23ef3c5d1c0f047c960a558a15f9c6c",
-            "size": 27724280
+            "url": "https://github.com/has207/xenia-edge/releases/download/921c5d3/xenia_edge_linux.AppImage",
+            "version": "921c5d3",
+            "sha256": "63237bb99e27aba5d479d7eb3e1da461d3259c161b32acb89a962d0acf95f6bc",
+            "size": 27748856
           }
         ]
       },
@@ -545,18 +545,18 @@
           {
             "type": "appimage",
             "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/Vita3K-x86_64.AppImage",
-            "version": "continuous-2026-11-09",
-            "sha256": "59c11dd5418d384614b2a3e7a783551220b0010f352aa0863c88b315ce65f2e3",
-            "size": 89378092
+            "version": "continuous-2026-11-10",
+            "sha256": "78f89a0d9674dd79d81a7140facbbb1ae50b26759533f36bec35b2d1769c4c6a",
+            "size": 89482330
           }
         ],
         "aarch64": [
           {
             "type": "appimage",
             "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/Vita3K-aarch64.AppImage",
-            "version": "continuous-2026-11-09",
-            "sha256": "0ae577da754e342062bb48c10744c0aa1032056f0c9a9ba2280844ed81a59cb9",
-            "size": 88270605
+            "version": "continuous-2026-11-10",
+            "sha256": "e1ac6c95f9a0e2a2aeb25b9d3d89cd189ee9e3e3d96ce421222ac516a4190d36",
+            "size": 88390307
           }
         ]
       }
@@ -692,12 +692,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/gambatte_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "e09352e9"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/gambatte_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "998fdfa8"
           }
         }
@@ -713,12 +713,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mgba_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "5474b5a7"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mgba_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "3be1fba3"
           }
         }
@@ -732,12 +732,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/melondsds_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "78c08a1d"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/melondsds_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "1af7da93"
           }
         }
@@ -751,12 +751,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mesen_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "bf25c4f1"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mesen_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "40c5e11b"
           }
         }
@@ -770,12 +770,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/fceumm_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "669ec388"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/fceumm_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "bd68e91a"
           }
         }
@@ -789,12 +789,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/snes9x_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "e211e6cb"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/snes9x_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "dbb84d13"
           }
         }
@@ -808,12 +808,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mupen64plus_next_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "d15fccb8"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mupen64plus_next_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "224c9ab0"
           }
         }
@@ -829,13 +829,13 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/flycast_libretro.so.zip",
-            "version": "2026-11-09",
-            "crc32": "187ac5c4"
+            "version": "2026-11-10",
+            "crc32": "6c96081c"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/flycast_libretro.so.zip",
-            "version": "2026-11-09",
-            "crc32": "19c08e31"
+            "version": "2026-11-10",
+            "crc32": "baea2cec"
           }
         }
       },
@@ -848,12 +848,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/swanstation_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "eca78714"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/swanstation_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "1752dcac"
           }
         }
@@ -867,7 +867,7 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_psx_hw_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "f63496e4"
           }
         }
@@ -881,13 +881,13 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/pcsx_rearmed_libretro.so.zip",
-            "version": "2026-11-09",
-            "crc32": "4ee712d5"
+            "version": "2026-11-10",
+            "crc32": "9cb0a164"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/pcsx_rearmed_libretro.so.zip",
-            "version": "2026-11-09",
-            "crc32": "ed1df4e0"
+            "version": "2026-11-10",
+            "crc32": "eec3a2dd"
           }
         }
       },
@@ -900,13 +900,13 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/ppsspp_libretro.so.zip",
-            "version": "2026-11-09",
-            "crc32": "f97bd91d"
+            "version": "2026-11-10",
+            "crc32": "7253fb15"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/ppsspp_libretro.so.zip",
-            "version": "2026-11-09",
-            "crc32": "5ff6bfda"
+            "version": "2026-11-10",
+            "crc32": "802d67b7"
           }
         }
       },
@@ -919,12 +919,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/nestopia_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "0e312460"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/nestopia_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "6abc30a0"
           }
         }
@@ -939,7 +939,7 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/sameboy_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "54579d8e"
           }
         }
@@ -953,12 +953,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/gpsp_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "6b463820"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/gpsp_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "bd131557"
           }
         }
@@ -974,12 +974,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/vbam_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "f65222fa"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/vbam_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "fd481c61"
           }
         }
@@ -993,12 +993,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/desmume_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "75dcc4c4"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/desmume_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "ddafac49"
           }
         }
@@ -1012,7 +1012,7 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/bsnes_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "8e9c7841"
           }
         }
@@ -1027,12 +1027,12 @@
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/parallel_n64_libretro.so.zip",
             "version": "2026-11-09",
-            "crc32": "9a703247"
+            "crc32": "8e17ed63"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/parallel_n64_libretro.so.zip",
             "version": "2026-11-09",
-            "crc32": "a36f4741"
+            "crc32": "05fdc80c"
           }
         }
       },
@@ -1045,12 +1045,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/melonds_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "458dc613"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/melonds_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "a694c81b"
           }
         }
@@ -1064,12 +1064,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_vb_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "22fae315"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mednafen_vb_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "baa7d947"
           }
         }
@@ -1083,12 +1083,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/pokemini_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "5efb7f3a"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/pokemini_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "980efd61"
           }
         }
@@ -1106,13 +1106,13 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/genesis_plus_gx_libretro.so.zip",
-            "version": "2026-11-07",
-            "crc32": "66e63d9a"
+            "version": "2026-11-09",
+            "crc32": "f25aea8f"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/genesis_plus_gx_libretro.so.zip",
-            "version": "2026-11-07",
-            "crc32": "5a032901"
+            "version": "2026-11-09",
+            "crc32": "c641ee09"
           }
         }
       },
@@ -1128,12 +1128,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/picodrive_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "72d8a771"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/picodrive_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "c47a39e0"
           }
         }
@@ -1148,12 +1148,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_pce_fast_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "fddbcf4b"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mednafen_pce_fast_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "817af3a5"
           }
         }
@@ -1169,12 +1169,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_pce_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "91c608a6"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mednafen_pce_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "3cfa9b51"
           }
         }
@@ -1190,12 +1190,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_supergrafx_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "521e6850"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mednafen_supergrafx_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "16647efd"
           }
         }
@@ -1209,7 +1209,7 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_saturn_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "65455dc7"
           }
         }
@@ -1223,12 +1223,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/yabasanshiro_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "7c613a51"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/yabasanshiro_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "f4cc209c"
           }
         }
@@ -1242,7 +1242,7 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/kronos_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "1f2dfc77"
           }
         }
@@ -1267,12 +1267,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/fbneo_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "505d9d7b"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/fbneo_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "11431d07"
           }
         }
@@ -1286,12 +1286,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/neocd_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "85991a59"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/neocd_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "6a4baf84"
           }
         }
@@ -1306,7 +1306,7 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mame_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "562576a2"
           }
         }
@@ -1321,13 +1321,13 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mame2003_plus_libretro.so.zip",
-            "version": "2026-11-07",
-            "crc32": "d1e9f03b"
+            "version": "2026-11-09",
+            "crc32": "609edda0"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mame2003_plus_libretro.so.zip",
-            "version": "2026-11-07",
-            "crc32": "09dedc68"
+            "version": "2026-11-09",
+            "crc32": "e3a9dbad"
           }
         }
       },
@@ -1340,13 +1340,13 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/stella_libretro.so.zip",
-            "version": "2026-11-09",
-            "crc32": "0847cc4b"
+            "version": "2026-11-10",
+            "crc32": "85af8729"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/stella_libretro.so.zip",
-            "version": "2026-11-09",
-            "crc32": "8dd61ca5"
+            "version": "2026-11-10",
+            "crc32": "b458c859"
           }
         }
       },
@@ -1359,12 +1359,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/handy_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "524e4ae6"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/handy_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "d6623bbc"
           }
         }
@@ -1378,13 +1378,13 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/virtualjaguar_libretro.so.zip",
-            "version": "2026-11-07",
-            "crc32": "b24f08c4"
+            "version": "2026-11-09",
+            "crc32": "d7886a6e"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/virtualjaguar_libretro.so.zip",
-            "version": "2026-11-07",
-            "crc32": "5999bc2f"
+            "version": "2026-11-09",
+            "crc32": "72e0328a"
           }
         }
       },
@@ -1398,12 +1398,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/atari800_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "ee43a2fd"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/atari800_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "ea04e98c"
           }
         }
@@ -1417,12 +1417,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/prosystem_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "b5c4d2a3"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/prosystem_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "fe478c6c"
           }
         }
@@ -1437,12 +1437,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_ngp_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "f3b6215e"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mednafen_ngp_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "dd65a437"
           }
         }
@@ -1457,12 +1457,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_wswan_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "3a224a58"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/mednafen_wswan_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "49552756"
           }
         }
@@ -1478,12 +1478,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/bluemsx_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "8e77cbd1"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/bluemsx_libretro.so.zip",
-            "version": "2026-11-07",
+            "version": "2026-11-09",
             "crc32": "87141da6"
           }
         }
@@ -1500,13 +1500,13 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/puae_libretro.so.zip",
-            "version": "2026-11-09",
-            "crc32": "ab5ecc82"
+            "version": "2026-11-10",
+            "crc32": "abbe410c"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/puae_libretro.so.zip",
-            "version": "2026-11-09",
-            "crc32": "e306f831"
+            "version": "2026-11-10",
+            "crc32": "c45339b6"
           }
         }
       },
@@ -1519,13 +1519,13 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/hatari_libretro.so.zip",
-            "version": "2026-11-07",
-            "crc32": "2b7d2faa"
+            "version": "2026-11-10",
+            "crc32": "3eaf8213"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/hatari_libretro.so.zip",
-            "version": "2026-11-07",
-            "crc32": "3f9c2ffa"
+            "version": "2026-11-10",
+            "crc32": "db38b353"
           }
         }
       },
@@ -1538,13 +1538,13 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/hatarib_libretro.so.zip",
-            "version": "2026-11-09",
-            "crc32": "0449edef"
+            "version": "2026-11-10",
+            "crc32": "011d3236"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/hatarib_libretro.so.zip",
-            "version": "2026-11-09",
-            "crc32": "b0112347"
+            "version": "2026-11-10",
+            "crc32": "5d281348"
           }
         }
       },
@@ -1671,12 +1671,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/dosbox_pure_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "2223ea5b"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/dosbox_pure_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "1a2c8160"
           }
         }
@@ -1690,12 +1690,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/scummvm_libretro.so.zip",
-            "version": "2026-11-08",
+            "version": "2026-11-09",
             "crc32": "d0fa6ac2"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/scummvm_libretro.so.zip",
-            "version": "2026-11-08",
+            "version": "2026-11-09",
             "crc32": "d4939330"
           }
         }
@@ -1709,7 +1709,7 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/opera_libretro.so.zip",
-            "version": "2026-11-08",
+            "version": "2026-11-09",
             "crc32": "a25ef3cc"
           },
           "aarch64": {
@@ -1728,12 +1728,12 @@
         "builds": {
           "x86_64": {
             "url": "https://buildbot.libretro.com/nightly/linux/x86_64/latest/prboom_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "a570b5d7"
           },
           "aarch64": {
             "url": "https://buildbot.libretro.com/nightly/linux/aarch64/latest/prboom_libretro.so.zip",
-            "version": "2026-11-09",
+            "version": "2026-11-10",
             "crc32": "0d40ef56"
           }
         }

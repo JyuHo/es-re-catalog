@@ -25,8 +25,11 @@ standalone:
     binaries: [retroarch]
     builds:
       x86_64:
+        # libretro does not publish an official AppImage; these are pkgforge-dev's builds.
+        - { type: appimage, repo: pkgforge-dev/RetroArch-AppImage-Enhanced, asset: '^RetroArch-[0-9.]+-anylinux-x86_64\.AppImage$' }
         - { type: flatpak, ref: org.libretro.RetroArch }
       aarch64:
+        - { type: appimage, repo: pkgforge-dev/RetroArch-AppImage-Enhanced, asset: '^RetroArch-[0-9.]+-anylinux-aarch64\.AppImage$' }
         - { type: flatpak, ref: org.libretro.RetroArch }
 
   - id: duckstation

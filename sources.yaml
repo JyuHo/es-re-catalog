@@ -6,7 +6,7 @@
 #   binaries  executable names that mean "already installed by the system package manager"
 #   logo      optional: a file under logos/ or an https URL; defaults to the Flathub icon
 #   builds    per architecture, in order of preference. ES installs the first one it can:
-#     type: appimage   repo + asset (regex), or url + version
+#     type: appimage   repo + asset (regex), page + pattern (named url/version groups), or url + version
 #     type: archive    same, plus exec: regex of the executable inside the archive
 #     type: flatpak    ref (+ remote, default flathub), installed with flatpak --user
 #   GitHub sources may set prerelease: true, rolling: true (a tag such as "latest" that is
@@ -117,8 +117,11 @@ standalone:
     binaries: [dolphin-emu]
     builds:
       x86_64:
+        # The official AppImage, from the release list on dolphin-emu.org.
+        - { type: appimage, page: https://dolphin-emu.org/download/, pattern: 'href="(?P<url>https://dl\.dolphin-emu\.org/releases/(?P<version>[^/"]+)/dolphin-(?P=version)-x64\.AppImage)"' }
         - { type: flatpak, ref: org.DolphinEmu.dolphin-emu }
       aarch64:
+        - { type: appimage, page: https://dolphin-emu.org/download/, pattern: 'href="(?P<url>https://dl\.dolphin-emu\.org/releases/(?P<version>[^/"]+)/dolphin-(?P=version)-arm64\.AppImage)"' }
         - { type: flatpak, ref: org.DolphinEmu.dolphin-emu }
 
   - id: cemu

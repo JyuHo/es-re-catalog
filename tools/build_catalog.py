@@ -156,6 +156,18 @@ class Resolver:
                 return self.finish(emu_id, arch, src, url, version)
         raise SourceError(f"{src['repo']}: no release asset matches /{src['asset']}/")
 
+    def resolve_page(self, emu_id: str, arch: str, src: dict[str, Any]) -> dict[str, Any]:
+        """Find a build on an HTML page with a regex holding `url` and `version` groups."""
+        pattern = re.compile(src["pattern"])
+        missing = {"url", "version"} - set(pattern.groupindex)
+        if missing:
+            raise SourceError(f"page pattern needs named groups {', '.join(sorted(missing))}")
+        html = self.get(src["page"], None).decode("utf-8", "replace")
+        match = pattern.search(html)
+        if not match:
+            raise SourceError(f"{src['page']}: no match for /{src['pattern']}/")
+        return self.finish(emu_id, arch, src, match.group("url"), match.group("version"))
+
     def finish(self, emu_id: str, arch: str, src: dict[str, Any], url: str, version: str) -> dict[str, Any]:
         build: dict[str, Any] = {"type": src["type"], "url": url, "version": version}
         if src["type"] == "archive":
@@ -172,6 +184,8 @@ class Resolver:
         kind = src["type"]
         if kind == "flatpak":
             return {"type": "flatpak", "ref": src["ref"], "remote": src.get("remote", "flathub")}
+        if "page" in src:
+            return self.resolve_page(emu_id, arch, src)
         if "repo" in src:
             return self.resolve_github(emu_id, arch, src)
         return self.finish(emu_id, arch, src, src["url"], str(src["version"]))
@@ -295,6 +309,18 @@ def validate_sources(sources: dict[str, Any]) -> list[str]:
                     elif kind == "flatpak":
                         if "ref" not in src:
                             problems.append(f"{ident} ({arch}): flatpak needs ref")
+                    elif "page" in src:
+                        if "pattern" not in src:
+                            problems.append(f"{ident} ({arch}): page source needs pattern")
+                        else:
+                            try:
+                                pattern = re.compile(src["pattern"])
+                                missing = {"url", "version"} - set(pattern.groupindex)
+                                if missing:
+                                    problems.append(f"{ident} ({arch}): page pattern needs named groups "
+                                                    f"{', '.join(sorted(missing))}")
+                            except re.error as e:
+                                problems.append(f"{ident} ({arch}): bad page regex: {e}")
                     elif "repo" in src:
                         if "asset" not in src:
                             problems.append(f"{ident} ({arch}): github source needs asset")
@@ -304,7 +330,7 @@ def validate_sources(sources: dict[str, Any]) -> list[str]:
                             except re.error as e:
                                 problems.append(f"{ident} ({arch}): bad asset regex: {e}")
                     elif "url" not in src or "version" not in src:
-                        problems.append(f"{ident} ({arch}): needs repo+asset or url+version")
+                        problems.append(f"{ident} ({arch}): needs repo+asset, page+pattern or url+version")
                     if kind == "archive" and "exec" not in src:
                         problems.append(f"{ident} ({arch}): archive needs exec")
     return problems

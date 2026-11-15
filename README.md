@@ -10,8 +10,8 @@ ES downloads a single file:
 ## How it works
 
 * [`sources.yaml`](sources.yaml) is written by hand: for each emulator, where its builds come
-  from (a GitHub or Forgejo release asset, a fixed URL, or a Flathub app), per architecture, in
-  order of preference; for each core, its libretro name.
+  from (a GitHub or Forgejo release asset, a fixed URL, an HTML page to scrape, or a Flathub app),
+  per architecture, in order of preference; for each core, its libretro name.
 * [`tools/build_catalog.py`](tools/build_catalog.py) resolves those sources into `catalog.json`:
   exact URL, version, size and sha256 of each build, and the date and CRC of each core on the
   libretro buildbot. A GitHub Action runs it every day and commits the result, so ES never queries

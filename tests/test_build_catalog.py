@@ -23,6 +23,17 @@ GH_RELEASES = [
                  "updated_at": "2026-10-01T00:00:00Z"}]},
 ]
 INDEX = "2026-11-05 deadbeef snes9x_libretro.so.zip\n2026-11-04 cafebabe gambatte_libretro.so.zip\n"
+PAGE_HTML = b'<a href="https://dl.example.org/releases/2609b/emu-2609b-x64.AppImage">Linux x64</a>'
+PAGE_SOURCES = {
+    "standalone": [{
+        "id": "emu", "name": "Emu", "systems": ["psx"],
+        "builds": {"x86_64": [{
+            "type": "appimage",
+            "page": "https://example.org/download/",
+            "pattern": r'href="(?P<url>https://dl\.example\.org/releases/(?P<version>[^/"]+)/emu-(?P=version)-x64\.AppImage)"',
+        }]},
+    }],
+}
 SOURCES = yaml.safe_load("""
 standalone:
   - id: emu
@@ -50,6 +61,8 @@ class FakeNet:
             return json.dumps(GH_RELEASES).encode()
         if url.endswith(".index-extended"):
             return INDEX.encode()
+        if url == "https://example.org/download/":
+            return PAGE_HTML
         raise bc.SourceError(f"unexpected {url}")
 
     def hasher(self, url):
@@ -79,6 +92,26 @@ class BuildCatalogTests(unittest.TestCase):
         self.assertEqual(emu["builds"]["x86_64"][1], {"type": "flatpak", "ref": "org.example.Emu", "remote": "flathub"})
         self.assertEqual(emu["builds"]["aarch64"][0]["exec"], "\\.AppImage$")
         self.assertEqual(bc.validate_catalog(catalog), [])
+
+    def test_page_source_reads_url_and_version(self):
+        net = FakeNet()
+        resolver = bc.Resolver(None, get=net.get, hasher=net.hasher)
+        catalog = bc.build_catalog(PAGE_SOURCES, resolver)
+        build = catalog["standalone"][0]["builds"]["x86_64"][0]
+        self.assertEqual(build["url"], "https://dl.example.org/releases/2609b/emu-2609b-x64.AppImage")
+        self.assertEqual(build["version"], "2609b")
+        self.assertEqual(build["sha256"], "a" * 64)
+        self.assertEqual(resolver.errors, [])
+
+    def test_page_pattern_needs_url_and_version_groups(self):
+        sources = {"standalone": [{
+            "id": "emu", "name": "Emu", "systems": [],
+            "builds": {"x86_64": [{
+                "type": "appimage", "page": "https://example.org/download/", "pattern": "x64",
+            }]},
+        }]}
+        problems = bc.validate_sources(sources)
+        self.assertTrue(any("named groups" in p for p in problems))
 
     def test_flathub_icon_is_the_default_logo(self):
         catalog, _, _ = build()

@@ -375,6 +375,31 @@
       "logo": "logos/eden.png"
     },
     {
+      "id": "fritchii",
+      "name": "Fritchii",
+      "systems": [
+        "switch",
+        "switch2"
+      ],
+      "description": "Nintendo Switch 2 emulator, Lichii fork tuned for Ocarina of Time.",
+      "homepage": "https://github.com/Frizti/Fritchii",
+      "binaries": [
+        "lichii"
+      ],
+      "builds": {
+        "x86_64": [
+          {
+            "type": "appimage",
+            "url": "https://github.com/Frizti/Fritchii/releases/download/fritchii-v6.5/Fritchii-v6.5-Linux-x86_64.AppImage",
+            "version": "fritchii-v6.5",
+            "sha256": "804b679b720c82bb5cee2c5f68ac59c5fbe8ffc7f16af3776ba1c4a15d0d243d",
+            "size": 130324984
+          }
+        ]
+      },
+      "logo": "logos/fritchii.png"
+    },
+    {
       "id": "xemu",
       "name": "xemu",
       "systems": [

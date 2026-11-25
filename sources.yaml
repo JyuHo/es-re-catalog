@@ -148,6 +148,18 @@ standalone:
       aarch64:
         - { type: appimage, forge: https://git.eden-emu.dev, repo: eden-emu/eden, asset: '^Eden-Linux-v[0-9.]+-aarch64-gcc-standard\.AppImage$' }
 
+  - id: fritchii
+    name: Fritchii
+    description: Nintendo Switch 2 emulator, Lichii fork tuned for Ocarina of Time.
+    systems: [switch, switch2]
+    homepage: https://github.com/Frizti/Fritchii
+    license: GPL-3.0
+    logo: logos/fritchii.png
+    binaries: [lichii]
+    builds:
+      x86_64:
+        - { type: appimage, repo: Frizti/Fritchii, asset: '^Fritchii-v[0-9.]+-Linux-x86_64\.AppImage$' }
+
   - id: xemu
     name: xemu
     description: Original Xbox emulator.
